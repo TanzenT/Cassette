@@ -1,34 +1,28 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://github.com/rRemix/APlayer/blob/master/LICENSE)
 
-# APlayer
-# 安卓本地音乐播放器
+# Cassette
+# Android Music Player
 
-## 简介
-遵循 Material Design 设计,UI清新简洁,操作简单,功能齐全<br>
-下载地址:https://www.coolapk.com/apk/remix.myplayer
-
-
-## 截图
-<img src="/pictures/Screenshot_20180112-112950.png" alt="screenshot" title="screenshot" width="270" height="486" /><img src="/pictures/Screenshot_20180112-113007.png" alt="screenshot" title="screenshot" width="270" height="486" />  <img src="/pictures/Screenshot_20180112-113128.png" alt="screenshot" title="screenshot" width="270" height="486" /><br><br>
-<img src="/pictures/Screenshot_20180112-113144.png" alt="screenshot" title="screenshot" width="270" height="486" />  <img src="/pictures/Screenshot_20180112-143937.png" alt="screenshot" title="screenshot" width="270" height="486" />  <img src="/pictures/Screenshot_20180112-113550.png" alt="screenshot" title="screenshot" width="270" height="486" /> <br><br>
-<img src="/pictures/Screenshot_20180112-113637.png" alt="screenshot" title="screenshot" width="270" height="486" />  <img src="/pictures/Screenshot_20180112-113707.png" alt="screenshot" title="screenshot" width="270" height="486" />  <img src="/pictures/Screenshot_20180112-113820.png" alt="screenshot" title="screenshot" width="270" height="486" />  <img src="/pictures/Screenshot_20180112-113855.png" alt="screenshot" title="screenshot" width="270" height="486" />  
+## Introduce
+Material Desing, Simple UI, Powerful features<br>
+Download:https://play.google.com/store/apps/details?id=tanzent.cassette
 
 
-## 特点
-- 首页Tab可配置，最多支持五个,包括歌曲、艺术家、专辑、文件夹、播放列表
-- 专辑、艺术家封面自动补全
-- 支持显示本地和在线歌词(网易)，可设置歌词搜索的优先级；本地歌词可以自由选择，或者忽略歌词
-- 支持耳机线控操作,拔出耳机自动暂停
-- 支持桌面歌词、桌面部件
-- 已适配Android8.0通知栏
-- 锁屏控制,可选择原生或者软件实现
-- 心情可生成海报分享
-- 日夜间模式切换，动态改变主题颜色
-- 监测媒体库变化自动刷新，并且可以手动扫描指定目录
-- 其他必备和便捷操作如歌曲信息编辑、睡眠定时、均衡器等
+## Feature
+- Home Tab is configurable and supports up to five, including songs, artists, albums, folders, playlists
+- Album, artist cover auto completion
+- Support local and online lyrics (Netease), set the priority of lyric search; local lyrics can be freely selected, or ignore lyrics
+- Supports headset remote control operation, pulls out the headset and automatically pauses
+- Support desktop lyrics, desktop widgets
+- Adapted to Android 8.0 notification bar
+- Lock screen control, optional native or software implementation
+- Mood can generate poster sharing
+- Day and night mode switch to dynamically change the theme color
+- Monitor media library changes automatically refreshed and manually scan specified directories
+- Other essential and convenient operations such as song information editing, sleep timing, equalizer, etc.
 
 
-## 感谢
+## Used Libraries
 - [RxJava](https://github.com/ReactiveX/RxJava)
 - [RxAndroid](https://github.com/ReactiveX/RxAndroid)
 - [Retrofit](https://github.com/square/retrofit)
@@ -38,12 +32,5 @@
 - [Android-crop](https://github.com/jdamcd/android-crop)
 - [TinyPinyin](https://github.com/promeG/TinyPinyin)
 
-
-## 最后 
-- 如果喜欢或者能给你提供帮助，欢迎Star
-- 因为是刚学安卓的时候就开始做了，很多代码待完善或者重构，还有一些待开发的功能，欢迎Pull Request
-- 有任何问题可以提出Issue或者发邮件到我的邮箱: rRemix.me@gmail.com
-
-
-
-## [更新日志](/UPDATE.md)
+## Base
+- Cassette is based on [APlayer](https://github.com/rRemix/APlayer)
