@@ -33,4 +33,4 @@ Download:https://play.google.com/store/apps/details?id=tanzent.cassette
 - [TinyPinyin](https://github.com/promeG/TinyPinyin)
 
 ## Base
-- Cassette is based on [APlayer](https://github.com/rRemix/APlayer)
+- Cassette is based on [APlayer](https://github.com/rRemix/APlayer) by [rRemix](https://github.com/rRemix)
