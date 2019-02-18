@@ -1,0 +1,16 @@
+{
+  "buildFiles": [
+    "D:\\AndroidStudio\\Cassette\\app\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\TanzenT\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\AndroidStudio\\Cassette\\app\\.externalNativeBuild\\cmake\\xiaomiDebug\\armeabi-v7a --target clean"
+  ],
+  "libraries": {
+    "blur-Debug-armeabi-v7a": {
+      "artifactName": "blur",
+      "buildCommand": "C:\\Users\\TanzenT\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\AndroidStudio\\Cassette\\app\\.externalNativeBuild\\cmake\\xiaomiDebug\\armeabi-v7a --target blur",
+      "abi": "armeabi-v7a",
+      "output": "D:\\AndroidStudio\\Cassette\\app\\build\\intermediates\\cmake\\xiaomi\\debug\\obj\\armeabi-v7a\\libblur.so"
+    }
+  }
+}

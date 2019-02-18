@@ -1,0 +1,38 @@
+
+{
+	"buildFiles" : [ "D:/AndroidStudio/Cassette/app/CMakeLists.txt" ],
+	"cleanCommands" : 
+	[
+		"C:\\Users\\TanzenT\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\AndroidStudio\\Cassette\\app\\.externalNativeBuild\\cmake\\kuanRelease\\x86 --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"blur-Release-x86" : 
+		{
+			"abi" : "x86",
+			"artifactName" : "blur",
+			"buildCommand" : "C:\\Users\\TanzenT\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\AndroidStudio\\Cassette\\app\\.externalNativeBuild\\cmake\\kuanRelease\\x86 --target blur",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=i686-none-linux-android16 --gcc-toolchain=C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64 --sysroot=C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/sysroot  -Dblur_EXPORTS -isystem C:\\Users\\TanzenT\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\sources\\cxx-stl\\llvm-libc++\\include -isystem C:\\Users\\TanzenT\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\sources\\android\\support\\include -isystem C:\\Users\\TanzenT\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\sources\\cxx-stl\\llvm-libc++abi\\include  -isystem C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/sysroot/usr/include/i686-linux-android -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11  -O2 -DNDEBUG  -fPIC    -c ",
+					"src" : "D:/AndroidStudio/Cassette/app/src/main/cpp/blur.cpp",
+					"workingDirectory" : "D:/AndroidStudio/Cassette/app/.externalNativeBuild/cmake/kuanRelease/x86"
+				}
+			],
+			"output" : "D:/AndroidStudio/Cassette/app/build/intermediates/cmake/kuan/release/obj/x86/libblur.so",
+			"toolchain" : "2506101221"
+		}
+	},
+	"toolchains" : 
+	{
+		"2506101221" : 
+		{
+			"cCompilerExecutable" : "C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe",
+			"cppCompilerExecutable" : "C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe"
+		}
+	}
+}

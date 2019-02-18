@@ -1,0 +1,16 @@
+{
+  "buildFiles": [
+    "D:\\AndroidStudio\\Cassette\\app\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\TanzenT\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\AndroidStudio\\Cassette\\app\\.externalNativeBuild\\cmake\\googleDebug\\x86 --target clean"
+  ],
+  "libraries": {
+    "blur-Debug-x86": {
+      "artifactName": "blur",
+      "buildCommand": "C:\\Users\\TanzenT\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\AndroidStudio\\Cassette\\app\\.externalNativeBuild\\cmake\\googleDebug\\x86 --target blur",
+      "abi": "x86",
+      "output": "D:\\AndroidStudio\\Cassette\\app\\build\\intermediates\\cmake\\google\\debug\\obj\\x86\\libblur.so"
+    }
+  }
+}

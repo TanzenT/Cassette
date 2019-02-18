@@ -1,0 +1,3 @@
+D:/AndroidStudio/Cassette/app/.externalNativeBuild/cmake/xiaomiDebug/arm64-v8a/CMakeFiles/edit_cache.dir
+D:/AndroidStudio/Cassette/app/.externalNativeBuild/cmake/xiaomiDebug/arm64-v8a/CMakeFiles/blur.dir
+D:/AndroidStudio/Cassette/app/.externalNativeBuild/cmake/xiaomiDebug/arm64-v8a/CMakeFiles/rebuild_cache.dir

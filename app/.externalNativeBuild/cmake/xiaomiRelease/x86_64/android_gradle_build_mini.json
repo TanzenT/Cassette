@@ -1,0 +1,16 @@
+{
+  "buildFiles": [
+    "D:\\AndroidStudio\\Cassette\\app\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "C:\\Users\\TanzenT\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\AndroidStudio\\Cassette\\app\\.externalNativeBuild\\cmake\\xiaomiRelease\\x86_64 --target clean"
+  ],
+  "libraries": {
+    "blur-Release-x86_64": {
+      "artifactName": "blur",
+      "buildCommand": "C:\\Users\\TanzenT\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\AndroidStudio\\Cassette\\app\\.externalNativeBuild\\cmake\\xiaomiRelease\\x86_64 --target blur",
+      "abi": "x86_64",
+      "output": "D:\\AndroidStudio\\Cassette\\app\\build\\intermediates\\cmake\\xiaomi\\release\\obj\\x86_64\\libblur.so"
+    }
+  }
+}
