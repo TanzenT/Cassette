@@ -1,8 +1,10 @@
 package tanzent.cassette.lyric.bean;
 
-import tanzent.cassette.lyric.UpdateLyricThread;
+import static tanzent.cassette.lyric.bean.LrcRow.LYRIC_EMPTY_ROW;
+import static tanzent.cassette.lyric.bean.LrcRow.LYRIC_NO_ROW;
+import static tanzent.cassette.lyric.bean.LrcRow.LYRIC_SEARCHING_ROW;
 
-import static tanzent.cassette.lyric.UpdateLyricThread.EMPTY_ROW;
+import tanzent.cassette.lyric.LyricHolder;
 
 /**
  * @ClassName
@@ -12,39 +14,53 @@ import static tanzent.cassette.lyric.UpdateLyricThread.EMPTY_ROW;
  */
 
 public class LyricRowWrapper {
-    public LrcRow LineOne = EMPTY_ROW;
-    public LrcRow LineTwo = EMPTY_ROW;
-    public UpdateLyricThread.Status mStatus;
+  public static final LyricRowWrapper LYRIC_WRAPPER_NO = new LyricRowWrapper(LYRIC_NO_ROW, LYRIC_EMPTY_ROW);
+  public static final LyricRowWrapper LYRIC_WRAPPER_SEARCHING = new LyricRowWrapper(LYRIC_SEARCHING_ROW,LYRIC_EMPTY_ROW);
 
-    public LrcRow getLineOne() {
-        return LineOne;
-    }
 
-    public void setLineOne(LrcRow lineOne) {
-        LineOne = lineOne;
-    }
+  public LyricRowWrapper(LrcRow lineOne,LrcRow lineTwo){
+    mLineOne = lineOne;
+    mLineTwo = lineTwo;
+  }
 
-    public LrcRow getLineTwo() {
-        return LineTwo;
-    }
+  public LyricRowWrapper(){
 
-    public void setLineTwo(LrcRow lineTwo) {
-        LineTwo = lineTwo;
-    }
+  }
 
-    public UpdateLyricThread.Status getStatus() {
-        return mStatus;
-    }
+  private LrcRow mLineOne = LYRIC_EMPTY_ROW;
+  private LrcRow mLineTwo = LYRIC_EMPTY_ROW;
 
-    public void setStatus(UpdateLyricThread.Status status) {
-        mStatus = status;
-    }
+  private LyricHolder.Status mStatus;
 
-    @Override
-    public String toString() {
-        return "LyricRowWrapper{" +
-                "LineOne=" + LineOne +
-                ", LineTwo=" + LineTwo +
-                '}';
-    }
+  public LrcRow getLineOne() {
+    return mLineOne;
+  }
+
+  public void setLineOne(LrcRow lineOne) {
+    mLineOne = lineOne;
+  }
+
+  public LrcRow getLineTwo() {
+    return mLineTwo;
+  }
+
+  public void setLineTwo(LrcRow lineTwo) {
+    mLineTwo = lineTwo;
+  }
+
+  public LyricHolder.Status getStatus() {
+    return mStatus;
+  }
+
+  public void setStatus(LyricHolder.Status status) {
+    mStatus = status;
+  }
+
+  @Override
+  public String toString() {
+    return "LyricRowWrapper{" +
+        "LineOne=" + mLineOne +
+        ", LineTwo=" + mLineTwo +
+        '}';
+  }
 }

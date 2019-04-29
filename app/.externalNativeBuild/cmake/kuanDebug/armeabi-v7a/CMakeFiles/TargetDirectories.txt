@@ -1,3 +1,3 @@
-D:/AndroidStudio/Cassette/app/.externalNativeBuild/cmake/kuanDebug/armeabi-v7a/CMakeFiles/edit_cache.dir
-D:/AndroidStudio/Cassette/app/.externalNativeBuild/cmake/kuanDebug/armeabi-v7a/CMakeFiles/blur.dir
-D:/AndroidStudio/Cassette/app/.externalNativeBuild/cmake/kuanDebug/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+/Volumes/Data/AndroidStudio/Cassette/app/.externalNativeBuild/cmake/kuanDebug/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+/Volumes/Data/AndroidStudio/Cassette/app/.externalNativeBuild/cmake/kuanDebug/armeabi-v7a/CMakeFiles/edit_cache.dir
+/Volumes/Data/AndroidStudio/Cassette/app/.externalNativeBuild/cmake/kuanDebug/armeabi-v7a/CMakeFiles/blur.dir

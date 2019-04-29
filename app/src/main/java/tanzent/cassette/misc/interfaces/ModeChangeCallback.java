@@ -8,5 +8,6 @@ package tanzent.cassette.misc.interfaces;
  */
 
 public interface ModeChangeCallback {
-    void OnModeChange(int mode);
+
+  void OnModeChange(int mode);
 }

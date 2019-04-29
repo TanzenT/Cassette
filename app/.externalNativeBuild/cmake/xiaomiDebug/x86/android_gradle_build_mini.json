@@ -1,16 +1,18 @@
 {
   "buildFiles": [
-    "D:\\AndroidStudio\\Cassette\\app\\CMakeLists.txt"
+    "/Users/tanzent/Library/Android/sdk/ndk-bundle/build/cmake/android.toolchain.cmake",
+    "/Users/tanzent/Library/Android/sdk/ndk-bundle/build/cmake/platforms.cmake",
+    "/Volumes/Data/AndroidStudio/Cassette/app/CMakeLists.txt"
   ],
   "cleanCommands": [
-    "C:\\Users\\TanzenT\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\AndroidStudio\\Cassette\\app\\.externalNativeBuild\\cmake\\xiaomiDebug\\x86 --target clean"
+    "/Users/tanzent/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake --build /Volumes/Data/AndroidStudio/Cassette/app/.externalNativeBuild/cmake/xiaomiDebug/x86 --target clean"
   ],
   "libraries": {
     "blur-Debug-x86": {
       "artifactName": "blur",
-      "buildCommand": "C:\\Users\\TanzenT\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\AndroidStudio\\Cassette\\app\\.externalNativeBuild\\cmake\\xiaomiDebug\\x86 --target blur",
+      "buildCommand": "/Users/tanzent/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake --build /Volumes/Data/AndroidStudio/Cassette/app/.externalNativeBuild/cmake/xiaomiDebug/x86 --target blur",
       "abi": "x86",
-      "output": "D:\\AndroidStudio\\Cassette\\app\\build\\intermediates\\cmake\\xiaomi\\debug\\obj\\x86\\libblur.so"
+      "output": "/Volumes/Data/AndroidStudio/Cassette/app/build/intermediates/cmake/xiaomi/debug/obj/x86/libblur.so"
     }
   }
 }

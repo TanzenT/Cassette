@@ -1,15 +1,20 @@
-Executable : C:\Users\TanzenT\AppData\Local\Android\Sdk\cmake\3.6.4111459\bin\cmake.exe
+Executable : /Users/tanzent/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake
 arguments : 
--HD:\AndroidStudio\Cassette\app
--BD:\AndroidStudio\Cassette\app\.externalNativeBuild\cmake\kuanDebug\x86
+-H/Volumes/Data/AndroidStudio/Cassette/app
+-B/Volumes/Data/AndroidStudio/Cassette/app/.externalNativeBuild/cmake/kuanDebug/x86
 -DANDROID_ABI=x86
--DANDROID_PLATFORM=android-16
--DCMAKE_LIBRARY_OUTPUT_DIRECTORY=D:\AndroidStudio\Cassette\app\build\intermediates\cmake\kuan\debug\obj\x86
+-DANDROID_PLATFORM=android-17
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/Volumes/Data/AndroidStudio/Cassette/app/build/intermediates/cmake/kuan/debug/obj/x86
 -DCMAKE_BUILD_TYPE=Debug
--DANDROID_NDK=C:\Users\TanzenT\AppData\Local\Android\Sdk\ndk-bundle
+-DANDROID_NDK=/Users/tanzent/Library/Android/sdk/ndk-bundle
 -DCMAKE_CXX_FLAGS=
--DCMAKE_TOOLCHAIN_FILE=C:\Users\TanzenT\AppData\Local\Android\Sdk\ndk-bundle\build\cmake\android.toolchain.cmake
--DCMAKE_MAKE_PROGRAM=C:\Users\TanzenT\AppData\Local\Android\Sdk\cmake\3.6.4111459\bin\ninja.exe
--GAndroid Gradle - Ninja
+-DCMAKE_SYSTEM_NAME=Android
+-DCMAKE_ANDROID_ARCH_ABI=x86
+-DCMAKE_SYSTEM_VERSION=17
+-DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+-DCMAKE_ANDROID_NDK=/Users/tanzent/Library/Android/sdk/ndk-bundle
+-DCMAKE_TOOLCHAIN_FILE=/Users/tanzent/Library/Android/sdk/ndk-bundle/build/cmake/android.toolchain.cmake
+-G Ninja
+-DCMAKE_MAKE_PROGRAM=/Users/tanzent/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja
 jvmArgs : 
 

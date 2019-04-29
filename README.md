@@ -1,4 +1,4 @@
-[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://github.com/rRemix/APlayer/blob/master/LICENSE)
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](https://github.com/TanzenT/Cassette/blob/master/LICENSE)
 
 # Cassette
 # Android Music Player
@@ -25,10 +25,13 @@ Download:https://play.google.com/store/apps/details?id=tanzent.cassette
 ## Used Libraries
 - [RxJava](https://github.com/ReactiveX/RxJava)
 - [RxAndroid](https://github.com/ReactiveX/RxAndroid)
+- [Rxpermissions](https://github.com/tbruyelle/RxPermissions)
 - [Retrofit](https://github.com/square/retrofit)
 - [Butter Knife](https://github.com/JakeWharton/butterknife)
+- [Timber](https://github.com/JakeWharton/timber)
+- [Leakcanary](https://github.com/square/leakcanary)
+- [Rebound](https://github.com/facebook/rebound)
 - [Material-dialogs](https://github.com/afollestad/material-dialogs)
-- [Rxpermissions](https://github.com/tbruyelle/RxPermissions)
 - [Android-crop](https://github.com/jdamcd/android-crop)
 - [TinyPinyin](https://github.com/promeG/TinyPinyin)
 

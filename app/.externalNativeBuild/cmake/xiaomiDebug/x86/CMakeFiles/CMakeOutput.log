@@ -1,50 +1,52 @@
 The target system is: Android - 1 - i686
-The host system is: Windows - 10.0.17763 - AMD64
+The host system is: Darwin - 18.5.0 - x86_64
 Determining if the C compiler works passed with the following output:
-Change Dir: D:/AndroidStudio/Cassette/app/.externalNativeBuild/cmake/xiaomiDebug/x86/CMakeFiles/CMakeTmp
+Change Dir: /Volumes/Data/AndroidStudio/Cassette/app/.externalNativeBuild/cmake/xiaomiDebug/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\TanzenT\AppData\Local\Android\Sdk\cmake\3.6.4111459\bin\ninja.exe" "cmTC_6478e"
-[1/2] Building C object CMakeFiles/cmTC_6478e.dir/testCCompiler.c.o
-[2/2] Linking C executable cmTC_6478e
+Run Build Command:"/Users/tanzent/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja" "cmTC_dcab7"
+[1/2] Building C object CMakeFiles/cmTC_dcab7.dir/testCCompiler.c.o
+[2/2] Linking C executable cmTC_dcab7
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: D:/AndroidStudio/Cassette/app/.externalNativeBuild/cmake/xiaomiDebug/x86/CMakeFiles/CMakeTmp
+Change Dir: /Volumes/Data/AndroidStudio/Cassette/app/.externalNativeBuild/cmake/xiaomiDebug/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\TanzenT\AppData\Local\Android\Sdk\cmake\3.6.4111459\bin\ninja.exe" "cmTC_2fc05"
-[1/2] Building C object CMakeFiles/cmTC_2fc05.dir/CMakeCCompilerABI.c.o
-[2/2] Linking C executable cmTC_2fc05
-Android (4751641 based on r328903) clang version 7.0.2 (https://android.googlesource.com/toolchain/clang 003100370607242ddd5815e4a043907ea9004281) (https://android.googlesource.com/toolchain/llvm 1d739ffb0366421d383e04ff80ec2ee591315116) (based on LLVM 7.0.2svn)
-Target: i686-none-linux-android16
-Thread model: posix
-InstalledDir: C:\Users\TanzenT\AppData\Local\Android\Sdk\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin
-Found candidate GCC installation: C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/lib/gcc/i686-linux-android\4.9.x
-Selected GCC installation: C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x
-Candidate multilib: .;@m32
-Selected multilib: .;@m32
- "C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin\\ld" --sysroot=C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/platforms/android-16/arch-x86 -pie --enable-new-dtags --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -o cmTC_2fc05 "C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/platforms/android-16/arch-x86/usr/lib\\crtbegin_dynamic.o" -LC:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/x86 "-LC:\\Users\\TanzenT\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\lib64\\clang\\7.0.2\\lib\\linux\\i386" -LC:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x -LC:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -LC:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/platforms/android-16/arch-x86/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_2fc05.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl "C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/platforms/android-16/arch-x86/usr/lib\\crtend_android.o"
+Run Build Command:"/Users/tanzent/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja" "cmTC_85341"
+[1/2] Building C object CMakeFiles/cmTC_85341.dir/CMakeCCompilerABI.c.o
+[2/2] Linking C executable cmTC_85341
+Android (5058415 based on r339409) clang version 8.0.2 (https://android.googlesource.com/toolchain/clang 40173bab62ec746213857d083c0e8b0abb568790) (https://android.googlesource.com/toolchain/llvm 7a6618d69e7e8111e1d49dc9e7813767c5ca756a) (based on LLVM 8.0.2svn)
+Target: i686-none-linux-android17
+Thread model: posix
+InstalledDir: /Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin
+Found candidate GCC installation: /Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x
+Found candidate GCC installation: /Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x
+Selected GCC installation: /Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x
+Candidate multilib: .;@m32
+Selected multilib: .;@m32
+ "/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin/ld" --sysroot=/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -pie --enable-new-dtags --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -o cmTC_85341 /Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/i686-linux-android/17/crtbegin_dynamic.o -L/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/8.0.2/lib/linux/i386 -L/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x -L/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/i686-linux-android/17 -L/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/i686-linux-android -L/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -L/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections CMakeFiles/cmTC_85341.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl /Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/i686-linux-android/17/crtend_android.o
 
 
 Parsed C implicit link information from above output:
-  link line regex: [^( *|.*[/\])(i686-linux-android-ld\.exe|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: D:/AndroidStudio/Cassette/app/.externalNativeBuild/cmake/xiaomiDebug/x86/CMakeFiles/CMakeTmp]
+  link line regex: [^( *|.*[/\])(i686-linux-android-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Volumes/Data/AndroidStudio/Cassette/app/.externalNativeBuild/cmake/xiaomiDebug/x86/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"C:\Users\TanzenT\AppData\Local\Android\Sdk\cmake\3.6.4111459\bin\ninja.exe" "cmTC_2fc05"]
-  ignore line: [[1/2] Building C object CMakeFiles/cmTC_2fc05.dir/CMakeCCompilerABI.c.o]
-  ignore line: [[2/2] Linking C executable cmTC_2fc05]
-  ignore line: [Android (4751641 based on r328903) clang version 7.0.2 (https://android.googlesource.com/toolchain/clang 003100370607242ddd5815e4a043907ea9004281) (https://android.googlesource.com/toolchain/llvm 1d739ffb0366421d383e04ff80ec2ee591315116) (based on LLVM 7.0.2svn)]
-  ignore line: [Target: i686-none-linux-android16]
-  ignore line: [Thread model: posix]
-  ignore line: [InstalledDir: C:\Users\TanzenT\AppData\Local\Android\Sdk\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin]
-  ignore line: [Found candidate GCC installation: C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/lib/gcc/i686-linux-android\4.9.x]
-  ignore line: [Selected GCC installation: C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x]
+  ignore line: [Run Build Command:"/Users/tanzent/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja" "cmTC_85341"]
+  ignore line: [[1/2] Building C object CMakeFiles/cmTC_85341.dir/CMakeCCompilerABI.c.o]
+  ignore line: [[2/2] Linking C executable cmTC_85341]
+  ignore line: [Android (5058415 based on r339409) clang version 8.0.2 (https://android.googlesource.com/toolchain/clang 40173bab62ec746213857d083c0e8b0abb568790) (https://android.googlesource.com/toolchain/llvm 7a6618d69e7e8111e1d49dc9e7813767c5ca756a) (based on LLVM 8.0.2svn)]
+  ignore line: [Target: i686-none-linux-android17]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin]
+  ignore line: [Found candidate GCC installation: /Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x]
+  ignore line: [Found candidate GCC installation: /Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x]
+  ignore line: [Selected GCC installation: /Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x]
   ignore line: [Candidate multilib: .]
-  ignore line: [@m32]
+  ignore line: [@m32]
   ignore line: [Selected multilib: .]
-  ignore line: [@m32]
-  link line: [ "C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin\\ld" --sysroot=C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/platforms/android-16/arch-x86 -pie --enable-new-dtags --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -o cmTC_2fc05 "C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/platforms/android-16/arch-x86/usr/lib\\crtbegin_dynamic.o" -LC:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/x86 "-LC:\\Users\\TanzenT\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\lib64\\clang\\7.0.2\\lib\\linux\\i386" -LC:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x -LC:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -LC:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/platforms/android-16/arch-x86/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_2fc05.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl "C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/platforms/android-16/arch-x86/usr/lib\\crtend_android.o"]
-    arg [C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin\ld] ==> ignore
-    arg [--sysroot=C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/platforms/android-16/arch-x86] ==> ignore
+  ignore line: [@m32]
+  link line: [ "/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin/ld" --sysroot=/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -pie --enable-new-dtags --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -o cmTC_85341 /Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/i686-linux-android/17/crtbegin_dynamic.o -L/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/8.0.2/lib/linux/i386 -L/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x -L/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/i686-linux-android/17 -L/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/i686-linux-android -L/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -L/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections CMakeFiles/cmTC_85341.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl /Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/i686-linux-android/17/crtend_android.o]
+    arg [/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin/ld] ==> ignore
+    arg [--sysroot=/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot] ==> ignore
     arg [-pie] ==> ignore
     arg [--enable-new-dtags] ==> ignore
     arg [--eh-frame-hdr] ==> ignore
@@ -53,13 +55,14 @@ Parsed C implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/system/bin/linker] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_2fc05] ==> ignore
-    arg [C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/platforms/android-16/arch-x86/usr/lib\crtbegin_dynamic.o] ==> ignore
-    arg [-LC:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/x86] ==> dir [C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/x86]
-    arg [-LC:\Users\TanzenT\AppData\Local\Android\Sdk\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\lib64\clang\7.0.2\lib\linux\i386] ==> dir [C:\Users\TanzenT\AppData\Local\Android\Sdk\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\lib64\clang\7.0.2\lib\linux\i386]
-    arg [-LC:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x] ==> dir [C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x]
-    arg [-LC:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib] ==> dir [C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib]
-    arg [-LC:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/platforms/android-16/arch-x86/usr/lib] ==> dir [C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/platforms/android-16/arch-x86/usr/lib]
+    arg [cmTC_85341] ==> ignore
+    arg [/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/i686-linux-android/17/crtbegin_dynamic.o] ==> ignore
+    arg [-L/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/8.0.2/lib/linux/i386] ==> dir [/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/8.0.2/lib/linux/i386]
+    arg [-L/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x] ==> dir [/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x]
+    arg [-L/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/i686-linux-android/17] ==> dir [/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/i686-linux-android/17]
+    arg [-L/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/i686-linux-android] ==> dir [/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/i686-linux-android]
+    arg [-L/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib] ==> dir [/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib]
+    arg [-L/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib] ==> dir [/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib]
     arg [--exclude-libs] ==> ignore
     arg [libgcc.a] ==> ignore
     arg [--exclude-libs] ==> ignore
@@ -72,34 +75,32 @@ Parsed C implicit link information from above output:
     arg [-zrelro] ==> ignore
     arg [-znow] ==> ignore
     arg [--gc-sections] ==> ignore
-    arg [-znocopyreloc] ==> ignore
-    arg [CMakeFiles/cmTC_2fc05.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_85341.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [-ldl] ==> lib [dl]
     arg [-lc] ==> lib [c]
     arg [-lgcc] ==> lib [gcc]
     arg [-ldl] ==> lib [dl]
-    arg [C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/platforms/android-16/arch-x86/usr/lib\crtend_android.o] ==> ignore
-  remove lib [gcc]
-  remove lib [gcc]
-  collapse library dir [C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/x86] ==> [C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/x86]
-  collapse library dir [C:\Users\TanzenT\AppData\Local\Android\Sdk\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\lib64\clang\7.0.2\lib\linux\i386] ==> [C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib64/clang/7.0.2/lib/linux/i386]
-  collapse library dir [C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x] ==> [C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x]
-  collapse library dir [C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib] ==> [C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/i686-linux-android/lib]
-  collapse library dir [C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/platforms/android-16/arch-x86/usr/lib] ==> [C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/platforms/android-16/arch-x86/usr/lib]
-  implicit libs: [dl;c;dl]
-  implicit dirs: [C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/x86;C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib64/clang/7.0.2/lib/linux/i386;C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x;C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/i686-linux-android/lib;C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/platforms/android-16/arch-x86/usr/lib]
+    arg [/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/i686-linux-android/17/crtend_android.o] ==> ignore
+  collapse library dir [/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/8.0.2/lib/linux/i386] ==> [/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/8.0.2/lib/linux/i386]
+  collapse library dir [/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x] ==> [/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x]
+  collapse library dir [/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/i686-linux-android/17] ==> [/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/i686-linux-android/17]
+  collapse library dir [/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/i686-linux-android] ==> [/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/i686-linux-android]
+  collapse library dir [/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib] ==> [/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/i686-linux-android/lib]
+  collapse library dir [/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib] ==> [/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib]
+  implicit libs: [gcc;dl;c;gcc;dl]
+  implicit dirs: [/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/8.0.2/lib/linux/i386;/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x;/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/i686-linux-android/17;/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/i686-linux-android;/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/i686-linux-android/lib;/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib]
   implicit fwks: []
 
 
 
 
 Detecting C [-std=c11] compiler features compiled with the following output:
-Change Dir: D:/AndroidStudio/Cassette/app/.externalNativeBuild/cmake/xiaomiDebug/x86/CMakeFiles/CMakeTmp
+Change Dir: /Volumes/Data/AndroidStudio/Cassette/app/.externalNativeBuild/cmake/xiaomiDebug/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\TanzenT\AppData\Local\Android\Sdk\cmake\3.6.4111459\bin\ninja.exe" "cmTC_ddc7d"
-[1/2] Building C object CMakeFiles/cmTC_ddc7d.dir/feature_tests.c.o
-[2/2] Linking C executable cmTC_ddc7d
+Run Build Command:"/Users/tanzent/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja" "cmTC_117b8"
+[1/2] Building C object CMakeFiles/cmTC_117b8.dir/feature_tests.c.o
+[2/2] Linking C executable cmTC_117b8
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -109,11 +110,11 @@ Run Build Command:"C:\Users\TanzenT\AppData\Local\Android\Sdk\cmake\3.6.4111459\
 
 
 Detecting C [-std=c99] compiler features compiled with the following output:
-Change Dir: D:/AndroidStudio/Cassette/app/.externalNativeBuild/cmake/xiaomiDebug/x86/CMakeFiles/CMakeTmp
+Change Dir: /Volumes/Data/AndroidStudio/Cassette/app/.externalNativeBuild/cmake/xiaomiDebug/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\TanzenT\AppData\Local\Android\Sdk\cmake\3.6.4111459\bin\ninja.exe" "cmTC_ecff4"
-[1/2] Building C object CMakeFiles/cmTC_ecff4.dir/feature_tests.c.o
-[2/2] Linking C executable cmTC_ecff4
+Run Build Command:"/Users/tanzent/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja" "cmTC_79b23"
+[1/2] Building C object CMakeFiles/cmTC_79b23.dir/feature_tests.c.o
+[2/2] Linking C executable cmTC_79b23
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -123,11 +124,11 @@ Run Build Command:"C:\Users\TanzenT\AppData\Local\Android\Sdk\cmake\3.6.4111459\
 
 
 Detecting C [-std=c90] compiler features compiled with the following output:
-Change Dir: D:/AndroidStudio/Cassette/app/.externalNativeBuild/cmake/xiaomiDebug/x86/CMakeFiles/CMakeTmp
+Change Dir: /Volumes/Data/AndroidStudio/Cassette/app/.externalNativeBuild/cmake/xiaomiDebug/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\TanzenT\AppData\Local\Android\Sdk\cmake\3.6.4111459\bin\ninja.exe" "cmTC_74357"
-[1/2] Building C object CMakeFiles/cmTC_74357.dir/feature_tests.c.o
-[2/2] Linking C executable cmTC_74357
+Run Build Command:"/Users/tanzent/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja" "cmTC_0da89"
+[1/2] Building C object CMakeFiles/cmTC_0da89.dir/feature_tests.c.o
+[2/2] Linking C executable cmTC_0da89
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -135,50 +136,52 @@ Run Build Command:"C:\Users\TanzenT\AppData\Local\Android\Sdk\cmake\3.6.4111459\
     Feature record: C_FEATURE:0c_static_assert
     Feature record: C_FEATURE:0c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: D:/AndroidStudio/Cassette/app/.externalNativeBuild/cmake/xiaomiDebug/x86/CMakeFiles/CMakeTmp
+Change Dir: /Volumes/Data/AndroidStudio/Cassette/app/.externalNativeBuild/cmake/xiaomiDebug/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\TanzenT\AppData\Local\Android\Sdk\cmake\3.6.4111459\bin\ninja.exe" "cmTC_8b3f6"
-[1/2] Building CXX object CMakeFiles/cmTC_8b3f6.dir/testCXXCompiler.cxx.o
-[2/2] Linking CXX executable cmTC_8b3f6
+Run Build Command:"/Users/tanzent/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja" "cmTC_dc125"
+[1/2] Building CXX object CMakeFiles/cmTC_dc125.dir/testCXXCompiler.cxx.o
+[2/2] Linking CXX executable cmTC_dc125
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: D:/AndroidStudio/Cassette/app/.externalNativeBuild/cmake/xiaomiDebug/x86/CMakeFiles/CMakeTmp
+Change Dir: /Volumes/Data/AndroidStudio/Cassette/app/.externalNativeBuild/cmake/xiaomiDebug/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\TanzenT\AppData\Local\Android\Sdk\cmake\3.6.4111459\bin\ninja.exe" "cmTC_03e3b"
-[1/2] Building CXX object CMakeFiles/cmTC_03e3b.dir/CMakeCXXCompilerABI.cpp.o
-[2/2] Linking CXX executable cmTC_03e3b
-Android (4751641 based on r328903) clang version 7.0.2 (https://android.googlesource.com/toolchain/clang 003100370607242ddd5815e4a043907ea9004281) (https://android.googlesource.com/toolchain/llvm 1d739ffb0366421d383e04ff80ec2ee591315116) (based on LLVM 7.0.2svn)
-Target: i686-none-linux-android16
-Thread model: posix
-InstalledDir: C:\Users\TanzenT\AppData\Local\Android\Sdk\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin
-Found candidate GCC installation: C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/lib/gcc/i686-linux-android\4.9.x
-Selected GCC installation: C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x
-Candidate multilib: .;@m32
-Selected multilib: .;@m32
- "C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin\\ld" --sysroot=C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/platforms/android-16/arch-x86 -pie --enable-new-dtags --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -o cmTC_03e3b "C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/platforms/android-16/arch-x86/usr/lib\\crtbegin_dynamic.o" -LC:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/x86 "-LC:\\Users\\TanzenT\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\lib64\\clang\\7.0.2\\lib\\linux\\i386" -LC:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x -LC:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -LC:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/platforms/android-16/arch-x86/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_03e3b.dir/CMakeCXXCompilerABI.cpp.o -lm -lgcc -lgcc -ldl -lc -lgcc -lgcc -ldl "C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/platforms/android-16/arch-x86/usr/lib\\crtend_android.o"
+Run Build Command:"/Users/tanzent/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja" "cmTC_9ad20"
+[1/2] Building CXX object CMakeFiles/cmTC_9ad20.dir/CMakeCXXCompilerABI.cpp.o
+[2/2] Linking CXX executable cmTC_9ad20
+Android (5058415 based on r339409) clang version 8.0.2 (https://android.googlesource.com/toolchain/clang 40173bab62ec746213857d083c0e8b0abb568790) (https://android.googlesource.com/toolchain/llvm 7a6618d69e7e8111e1d49dc9e7813767c5ca756a) (based on LLVM 8.0.2svn)
+Target: i686-none-linux-android17
+Thread model: posix
+InstalledDir: /Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin
+Found candidate GCC installation: /Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x
+Found candidate GCC installation: /Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x
+Selected GCC installation: /Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x
+Candidate multilib: .;@m32
+Selected multilib: .;@m32
+ "/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin/ld" --sysroot=/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -pie --enable-new-dtags --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -o cmTC_9ad20 /Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/i686-linux-android/17/crtbegin_dynamic.o -L/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/8.0.2/lib/linux/i386 -L/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x -L/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/i686-linux-android/17 -L/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/i686-linux-android -L/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -L/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections CMakeFiles/cmTC_9ad20.dir/CMakeCXXCompilerABI.cpp.o -Bstatic -lc++ -Bdynamic -lm -lgcc -lgcc -ldl -lc -lgcc -lgcc -ldl /Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/i686-linux-android/17/crtend_android.o
 
 
 Parsed CXX implicit link information from above output:
-  link line regex: [^( *|.*[/\])(i686-linux-android-ld\.exe|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: D:/AndroidStudio/Cassette/app/.externalNativeBuild/cmake/xiaomiDebug/x86/CMakeFiles/CMakeTmp]
+  link line regex: [^( *|.*[/\])(i686-linux-android-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Volumes/Data/AndroidStudio/Cassette/app/.externalNativeBuild/cmake/xiaomiDebug/x86/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"C:\Users\TanzenT\AppData\Local\Android\Sdk\cmake\3.6.4111459\bin\ninja.exe" "cmTC_03e3b"]
-  ignore line: [[1/2] Building CXX object CMakeFiles/cmTC_03e3b.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [[2/2] Linking CXX executable cmTC_03e3b]
-  ignore line: [Android (4751641 based on r328903) clang version 7.0.2 (https://android.googlesource.com/toolchain/clang 003100370607242ddd5815e4a043907ea9004281) (https://android.googlesource.com/toolchain/llvm 1d739ffb0366421d383e04ff80ec2ee591315116) (based on LLVM 7.0.2svn)]
-  ignore line: [Target: i686-none-linux-android16]
-  ignore line: [Thread model: posix]
-  ignore line: [InstalledDir: C:\Users\TanzenT\AppData\Local\Android\Sdk\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin]
-  ignore line: [Found candidate GCC installation: C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/lib/gcc/i686-linux-android\4.9.x]
-  ignore line: [Selected GCC installation: C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x]
+  ignore line: [Run Build Command:"/Users/tanzent/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja" "cmTC_9ad20"]
+  ignore line: [[1/2] Building CXX object CMakeFiles/cmTC_9ad20.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [[2/2] Linking CXX executable cmTC_9ad20]
+  ignore line: [Android (5058415 based on r339409) clang version 8.0.2 (https://android.googlesource.com/toolchain/clang 40173bab62ec746213857d083c0e8b0abb568790) (https://android.googlesource.com/toolchain/llvm 7a6618d69e7e8111e1d49dc9e7813767c5ca756a) (based on LLVM 8.0.2svn)]
+  ignore line: [Target: i686-none-linux-android17]
+  ignore line: [Thread model: posix]
+  ignore line: [InstalledDir: /Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin]
+  ignore line: [Found candidate GCC installation: /Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x]
+  ignore line: [Found candidate GCC installation: /Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/x86_64-linux-android/4.9.x]
+  ignore line: [Selected GCC installation: /Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x]
   ignore line: [Candidate multilib: .]
-  ignore line: [@m32]
+  ignore line: [@m32]
   ignore line: [Selected multilib: .]
-  ignore line: [@m32]
-  link line: [ "C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin\\ld" --sysroot=C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/platforms/android-16/arch-x86 -pie --enable-new-dtags --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -o cmTC_03e3b "C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/platforms/android-16/arch-x86/usr/lib\\crtbegin_dynamic.o" -LC:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/x86 "-LC:\\Users\\TanzenT\\AppData\\Local\\Android\\Sdk\\ndk-bundle\\toolchains\\llvm\\prebuilt\\windows-x86_64\\lib64\\clang\\7.0.2\\lib\\linux\\i386" -LC:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x -LC:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -LC:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/platforms/android-16/arch-x86/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections -z nocopyreloc CMakeFiles/cmTC_03e3b.dir/CMakeCXXCompilerABI.cpp.o -lm -lgcc -lgcc -ldl -lc -lgcc -lgcc -ldl "C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/platforms/android-16/arch-x86/usr/lib\\crtend_android.o"]
-    arg [C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin\ld] ==> ignore
-    arg [--sysroot=C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/platforms/android-16/arch-x86] ==> ignore
+  ignore line: [@m32]
+  link line: [ "/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin/ld" --sysroot=/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -pie --enable-new-dtags --eh-frame-hdr -m elf_i386 -dynamic-linker /system/bin/linker -o cmTC_9ad20 /Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/i686-linux-android/17/crtbegin_dynamic.o -L/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/8.0.2/lib/linux/i386 -L/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x -L/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/i686-linux-android/17 -L/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/i686-linux-android -L/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib -L/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib --exclude-libs libgcc.a --exclude-libs libatomic.a --build-id --warn-shared-textrel --fatal-warnings --no-undefined -z noexecstack -z relro -z now --gc-sections CMakeFiles/cmTC_9ad20.dir/CMakeCXXCompilerABI.cpp.o -Bstatic -lc++ -Bdynamic -lm -lgcc -lgcc -ldl -lc -lgcc -lgcc -ldl /Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/i686-linux-android/17/crtend_android.o]
+    arg [/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/bin/ld] ==> ignore
+    arg [--sysroot=/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot] ==> ignore
     arg [-pie] ==> ignore
     arg [--enable-new-dtags] ==> ignore
     arg [--eh-frame-hdr] ==> ignore
@@ -187,13 +190,14 @@ Parsed CXX implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/system/bin/linker] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_03e3b] ==> ignore
-    arg [C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/platforms/android-16/arch-x86/usr/lib\crtbegin_dynamic.o] ==> ignore
-    arg [-LC:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/x86] ==> dir [C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/x86]
-    arg [-LC:\Users\TanzenT\AppData\Local\Android\Sdk\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\lib64\clang\7.0.2\lib\linux\i386] ==> dir [C:\Users\TanzenT\AppData\Local\Android\Sdk\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\lib64\clang\7.0.2\lib\linux\i386]
-    arg [-LC:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x] ==> dir [C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x]
-    arg [-LC:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib] ==> dir [C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib]
-    arg [-LC:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/platforms/android-16/arch-x86/usr/lib] ==> dir [C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/platforms/android-16/arch-x86/usr/lib]
+    arg [cmTC_9ad20] ==> ignore
+    arg [/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/i686-linux-android/17/crtbegin_dynamic.o] ==> ignore
+    arg [-L/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/8.0.2/lib/linux/i386] ==> dir [/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/8.0.2/lib/linux/i386]
+    arg [-L/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x] ==> dir [/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x]
+    arg [-L/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/i686-linux-android/17] ==> dir [/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/i686-linux-android/17]
+    arg [-L/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/i686-linux-android] ==> dir [/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/i686-linux-android]
+    arg [-L/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib] ==> dir [/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib]
+    arg [-L/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib] ==> dir [/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib]
     arg [--exclude-libs] ==> ignore
     arg [libgcc.a] ==> ignore
     arg [--exclude-libs] ==> ignore
@@ -206,8 +210,10 @@ Parsed CXX implicit link information from above output:
     arg [-zrelro] ==> ignore
     arg [-znow] ==> ignore
     arg [--gc-sections] ==> ignore
-    arg [-znocopyreloc] ==> ignore
-    arg [CMakeFiles/cmTC_03e3b.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_9ad20.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-Bstatic] ==> ignore
+    arg [-lc++] ==> lib [c++]
+    arg [-Bdynamic] ==> ignore
     arg [-lm] ==> lib [m]
     arg [-lgcc] ==> lib [gcc]
     arg [-lgcc] ==> lib [gcc]
@@ -216,29 +222,93 @@ Parsed CXX implicit link information from above output:
     arg [-lgcc] ==> lib [gcc]
     arg [-lgcc] ==> lib [gcc]
     arg [-ldl] ==> lib [dl]
-    arg [C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/platforms/android-16/arch-x86/usr/lib\crtend_android.o] ==> ignore
-  remove lib [gcc]
-  remove lib [gcc]
-  remove lib [gcc]
-  remove lib [gcc]
-  collapse library dir [C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/x86] ==> [C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/x86]
-  collapse library dir [C:\Users\TanzenT\AppData\Local\Android\Sdk\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\lib64\clang\7.0.2\lib\linux\i386] ==> [C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib64/clang/7.0.2/lib/linux/i386]
-  collapse library dir [C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x] ==> [C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x]
-  collapse library dir [C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib] ==> [C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/i686-linux-android/lib]
-  collapse library dir [C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/platforms/android-16/arch-x86/usr/lib] ==> [C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/platforms/android-16/arch-x86/usr/lib]
-  implicit libs: [m;dl;c;dl]
-  implicit dirs: [C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/sources/cxx-stl/llvm-libc++/libs/x86;C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/lib64/clang/7.0.2/lib/linux/i386;C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/lib/gcc/i686-linux-android/4.9.x;C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/toolchains/x86-4.9/prebuilt/windows-x86_64/i686-linux-android/lib;C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/platforms/android-16/arch-x86/usr/lib]
+    arg [/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/i686-linux-android/17/crtend_android.o] ==> ignore
+  collapse library dir [/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/8.0.2/lib/linux/i386] ==> [/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/8.0.2/lib/linux/i386]
+  collapse library dir [/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x] ==> [/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x]
+  collapse library dir [/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/i686-linux-android/17] ==> [/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/i686-linux-android/17]
+  collapse library dir [/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/i686-linux-android] ==> [/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/i686-linux-android]
+  collapse library dir [/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x/../../../../i686-linux-android/lib] ==> [/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/i686-linux-android/lib]
+  collapse library dir [/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib] ==> [/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib]
+  implicit libs: [c++;m;gcc;gcc;dl;c;gcc;gcc;dl]
+  implicit dirs: [/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib64/clang/8.0.2/lib/linux/i386;/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/lib/gcc/i686-linux-android/4.9.x;/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/i686-linux-android/17;/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/i686-linux-android;/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/i686-linux-android/lib;/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib]
   implicit fwks: []
 
 
 
 
-Detecting CXX [-std=c++14] compiler features compiled with the following output:
-Change Dir: D:/AndroidStudio/Cassette/app/.externalNativeBuild/cmake/xiaomiDebug/x86/CMakeFiles/CMakeTmp
+Detecting CXX [-std=c++1z] compiler features compiled with the following output:
+Change Dir: /Volumes/Data/AndroidStudio/Cassette/app/.externalNativeBuild/cmake/xiaomiDebug/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\TanzenT\AppData\Local\Android\Sdk\cmake\3.6.4111459\bin\ninja.exe" "cmTC_8f1b6"
-[1/2] Building CXX object CMakeFiles/cmTC_8f1b6.dir/feature_tests.cxx.o
-[2/2] Linking CXX executable cmTC_8f1b6
+Run Build Command:"/Users/tanzent/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja" "cmTC_d49a6"
+[1/2] Building CXX object CMakeFiles/cmTC_d49a6.dir/feature_tests.cxx.o
+[2/2] Linking CXX executable cmTC_d49a6
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_decltype_incomplete_return_types
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_relaxed_constexpr
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [-std=c++14] compiler features compiled with the following output:
+Change Dir: /Volumes/Data/AndroidStudio/Cassette/app/.externalNativeBuild/cmake/xiaomiDebug/x86/CMakeFiles/CMakeTmp
+
+Run Build Command:"/Users/tanzent/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja" "cmTC_ca634"
+[1/2] Building CXX object CMakeFiles/cmTC_ca634.dir/feature_tests.cxx.o
+[2/2] Linking CXX executable cmTC_ca634
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -301,11 +371,11 @@ Run Build Command:"C:\Users\TanzenT\AppData\Local\Android\Sdk\cmake\3.6.4111459\
 
 
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
-Change Dir: D:/AndroidStudio/Cassette/app/.externalNativeBuild/cmake/xiaomiDebug/x86/CMakeFiles/CMakeTmp
+Change Dir: /Volumes/Data/AndroidStudio/Cassette/app/.externalNativeBuild/cmake/xiaomiDebug/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\TanzenT\AppData\Local\Android\Sdk\cmake\3.6.4111459\bin\ninja.exe" "cmTC_ba30b"
-[1/2] Building CXX object CMakeFiles/cmTC_ba30b.dir/feature_tests.cxx.o
-[2/2] Linking CXX executable cmTC_ba30b
+Run Build Command:"/Users/tanzent/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja" "cmTC_85b8f"
+[1/2] Building CXX object CMakeFiles/cmTC_85b8f.dir/feature_tests.cxx.o
+[2/2] Linking CXX executable cmTC_85b8f
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -368,11 +438,11 @@ Run Build Command:"C:\Users\TanzenT\AppData\Local\Android\Sdk\cmake\3.6.4111459\
 
 
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
-Change Dir: D:/AndroidStudio/Cassette/app/.externalNativeBuild/cmake/xiaomiDebug/x86/CMakeFiles/CMakeTmp
+Change Dir: /Volumes/Data/AndroidStudio/Cassette/app/.externalNativeBuild/cmake/xiaomiDebug/x86/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:\Users\TanzenT\AppData\Local\Android\Sdk\cmake\3.6.4111459\bin\ninja.exe" "cmTC_955a8"
-[1/2] Building CXX object CMakeFiles/cmTC_955a8.dir/feature_tests.cxx.o
-[2/2] Linking CXX executable cmTC_955a8
+Run Build Command:"/Users/tanzent/Library/Android/sdk/cmake/3.10.2.4988404/bin/ninja" "cmTC_3f317"
+[1/2] Building CXX object CMakeFiles/cmTC_3f317.dir/feature_tests.cxx.o
+[2/2] Linking CXX executable cmTC_3f317
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers

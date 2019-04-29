@@ -17,122 +17,146 @@
 #}
 
 #指定代码的压缩级别
-#
-#-optimizationpasses 5
-#-dontusemixedcaseclassnames
-#-dontskipnonpubliclibraryclasses
-#-dontoptimize
-#-dontpreverify
-#-verbose
-#-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
-#-keepattributes *Annotation*
-#-keepattributes Signature
-#-keepattributes EnclosingMethod
-#-keepattributes SourceFile,LineNumberTable
+-optimizationpasses 5
+#包明不混合大小写
+-dontusemixedcaseclassnames
+#不去忽略非公共的库类
+-dontskipnonpubliclibraryclasses
+#优化  不优化输入的类文件
+-dontoptimize
+#预校验
+-dontpreverify
+#混淆时是否记录日志
+-verbose
+#混淆时所采用的算法
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
+#保持哪些类不被混淆
+#保护注解
+-keepattributes *Annotation*
+-keepattributes Signature
+-keepattributes EnclosingMethod
+#崩溃信息
+-keepattributes SourceFile,LineNumberTable
 
-#-keepclasseswithmembers class * implements java.io.Serializable{
-#    <fields>;
-#    <methods>;
-#}
-#-keep class **.bean.**{*;}
-#-keep class * implements android.os.Parcelable {
-#    public static final android.os.Parcelable$Creator *;
-#}
-#-keepclassmembers enum * {
-#    public static **[] values();
-#    public static ** valueOf(java.lang.String);
-#}
-#-keepclasseswithmembers class * implements android.os.Parcelable{
-#    <fields>;
-#    <methods>;
-#}
-#-keep class * extends cassette.ui.adapter.holder.BaseViewHolder{*;}
+#basedata
+-keepclasseswithmembers class * implements java.io.Serializable{
+    <fields>;
+    <methods>;
+}
+-keep class **.bean.**{*;}
+# 保留Parcelable序列化类不被混淆
+-keep class * implements android.os.Parcelable {
+    public static final android.os.Parcelable$Creator *;
+}
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+-keepclasseswithmembers class * implements android.os.Parcelable{
+    <fields>;
+    <methods>;
+}
+-keep class * extends cassette.ui.adapter.holder.BaseViewHolder{*;}
 
-#-keep class **.R$* {*;}
-#-keep public class tanzent.cassette.R$*{
-#public static final int *;
-#}
-#-keepclasseswithmembers class * extends android.app.Activity{
-#    <methods>;
-#}
-#-keep public class * extends android.app.Activity
-#-keep public class * extends android.app.Application
-#-keep public class * extends android.app.Service
-#-keep public class * extends android.content.BroadcastReceiver
-#-keep public class * extends android.content.ContentProvider
-#-keep public class * extends android.app.backup.BackupAgentHelper
-#-keep public class * extends android.preference.Preference
-#-keep public class com.android.vending.licensing.ILicensingService
-#-keep public class * extends java.lang.annotation.Annotation
-#-keep public class * extends android.os.Handler
+-keep class **.R$* {*;}
+-keep public class cassette.R$*{
+public static final int *;
+}
+-keepclassmembers class ** {
+    @cassette.misc.handler.OnHandleMessage public *;
+}
 
-#-keep public class **.R$*{
-#   public static final int *;
-#}
+-keep public class * extends android.app.Activity
+-keep public class * extends android.app.Application
+-keep public class * extends android.app.Service
+-keep public class * extends android.content.BroadcastReceiver
+-keep public class * extends android.content.ContentProvider
+-keep public class * extends android.app.backup.BackupAgentHelper
+-keep public class * extends android.preference.Preference
+-keep public class com.android.vending.licensing.ILicensingService
+-keep public class * extends java.lang.annotation.Annotation
+-keep public class * extends android.os.Handler
+-keep class !android.support.v7.internal.view.menu.**,android.support.** {*;}
 
-#-keep,allowobfuscation @interface com.facebook.common.internal.DoNotStrip
-#-keep,allowobfuscation @interface com.facebook.soloader.DoNotOptimize
-#-keep public class tanzent.cassette.ui.adapter.** { *; }
-#-keep @com.facebook.common.internal.DoNotStrip class *
-#-keepclassmembers class * {
-#    @com.facebook.common.internal.DoNotStrip *;
-#}
+-keep public class **.R$*{
+   public static final int *;
+}
 
-#-keep @com.facebook.soloader.DoNotOptimize class *
-#-keepclassmembers class * {
-#    @com.facebook.soloader.DoNotOptimize *;
-#}
+#fresco
+# Keep our interfaces so they can be used by other ProGuard rules.
+# See http://sourceforge.net/p/proguard/bugs/466/
+-keep,allowobfuscation @interface com.facebook.common.internal.DoNotStrip
+-keep,allowobfuscation @interface com.facebook.soloader.DoNotOptimize
 
-#-keepclassmembers class * {
-#    native <methods>;
-#}
+# Do not strip any method/class that is annotated with @DoNotStrip
+-keep @com.facebook.common.internal.DoNotStrip class *
+-keepclassmembers class * {
+    @com.facebook.common.internal.DoNotStrip *;
+}
 
-#-dontwarn okio.**
-#-dontwarn com.squareup.okhttp.**
-#-dontwarn okhttp3.**
-#-dontwarn javax.annotation.**
-#-dontwarn com.android.volley.toolbox.**
-#-dontwarn com.facebook.infer.**
+# Do not strip any method/class that is annotated with @DoNotOptimize
+-keep @com.facebook.soloader.DoNotOptimize class *
+-keepclassmembers class * {
+    @com.facebook.soloader.DoNotOptimize *;
+}
+
+# Keep native methods
+-keepclassmembers class * {
+    native <methods>;
+}
+
+-dontwarn okio.**
+-dontwarn com.squareup.okhttp.**
+-dontwarn okhttp3.**
+-dontwarn javax.annotation.**
+-dontwarn com.android.volley.toolbox.**
+-dontwarn com.facebook.infer.**
 
 
-#-dontwarn retrofit2.**
-#-keep class retrofit2.** { *; }
+#retrofit2
+-dontwarn retrofit2.**
+-keep class retrofit2.** { *; }
 
-#-keepclassmembers class rx.internal.util.unsafe.*ArrayQueue*Field* {
-# long producerIndex;
-# long consumerIndex;
-#}
-#-keepclassmembers class rx.internal.util.unsafe.BaseLinkedQueueProducerNodeRef {
-# rx.internal.util.atomic.LinkedQueueNode producerNode;
-#}
-#-keepclassmembers class rx.internal.util.unsafe.BaseLinkedQueueConsumerNodeRef {
-# rx.internal.util.atomic.LinkedQueueNode consumerNode;
-#}
+-keepclassmembers class rx.internal.util.unsafe.*ArrayQueue*Field* {
+ long producerIndex;
+ long consumerIndex;
+}
+-keepclassmembers class rx.internal.util.unsafe.BaseLinkedQueueProducerNodeRef {
+ rx.internal.util.atomic.LinkedQueueNode producerNode;
+}
+-keepclassmembers class rx.internal.util.unsafe.BaseLinkedQueueConsumerNodeRef {
+ rx.internal.util.atomic.LinkedQueueNode consumerNode;
+}
 
-#-keep class com.simplecityapps.recyclerview_fastscroll.** { *; }
+# FastScrollRecycleView
+-keep class com.simplecityapps.recyclerview_fastscroll.** { *; }
 
-#-keep class com.tbruyelle.rxpermissions.**{*;}
+#rxpermission
+-keep class com.tbruyelle.rxpermissions.**{*;}
 
-#-dontwarn java.lang.invoke.*
-#-dontwarn **$$Lambda$*
+#lambda
+-dontwarn java.lang.invoke.*
+-dontwarn **$$Lambda$*
 
-#-dontwarn android.net.compatibility.**
-#-dontwarn android.net.http.**
-#-dontwarn com.android.internal.http.multipart.**
-#-dontwarn org.apache.commons.**
-#-dontwarn org.apache.http.**
-#-keep class android.net.compatibility.**{*;}
-#-keep class android.net.http.**{*;}
-#-keep class com.android.internal.http.multipart.**{*;}
-#-keep class org.apache.commons.**{*;}
-#-keep class org.apache.http.**{*;}
+# 如果你需要兼容6.0系统，请不要混淆org.apache.http.legacy.jar
+-dontwarn android.net.compatibility.**
+-dontwarn android.net.http.**
+-dontwarn com.android.internal.http.multipart.**
+-dontwarn org.apache.commons.**
+-dontwarn org.apache.http.**
+-keep class android.net.compatibility.**{*;}
+-keep class android.net.http.**{*;}
+-keep class com.android.internal.http.multipart.**{*;}
+-keep class org.apache.commons.**{*;}
+-keep class org.apache.http.**{*;}
 
-#-dontwarn kotlin.**
+#kotlin
+-dontwarn kotlin.**
 
-#-keep class org.jaudiotagger.** { *; }
-#-dontwarn org.jaudiotagger.**
+#jaudiotagger
+-keep class org.jaudiotagger.** { *; }
+-dontwarn org.jaudiotagger.**
 
-#-keep class tv.danmaku.ijk.media.player.** { *; }
+#ijkplayer
+-keep class tv.danmaku.ijk.media.player.** { *; }
 
-#-dontwarn com.tencent.bugly.**
-#-keep public class com.tencent.bugly.**{*;}

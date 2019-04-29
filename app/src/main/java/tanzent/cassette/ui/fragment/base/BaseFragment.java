@@ -1,17 +1,17 @@
 package tanzent.cassette.ui.fragment.base;
 
+import static tanzent.cassette.ui.activity.base.BaseActivity.EXTERNAL_STORAGE_PERMISSIONS;
+
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.annotation.StringRes;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.RecyclerView;
-
 import butterknife.Unbinder;
 import tanzent.cassette.App;
 import tanzent.cassette.util.Util;
 
-import static tanzent.cassette.ui.activity.base.BaseActivity.EXTERNAL_STORAGE_PERMISSIONIS;
 
 /**
  * @ClassName
@@ -20,54 +20,58 @@ import static tanzent.cassette.ui.activity.base.BaseActivity.EXTERNAL_STORAGE_PE
  * @Date 2016/7/27 15:18
  */
 public abstract class BaseFragment extends Fragment {
-    protected Unbinder mUnBinder;
-    protected Context mContext;
-    protected boolean mHasPermission = false;
-    protected String mPageName = BaseFragment.class.getSimpleName();
 
-    @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-        mContext = context;
-    }
+  protected Unbinder mUnBinder;
+  protected Context mContext;
+  protected boolean mHasPermission = false;
+  protected String mPageName = BaseFragment.class.getSimpleName();
 
-    @Override
-    public void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        mHasPermission = Util.hasPermissions(EXTERNAL_STORAGE_PERMISSIONIS);
-    }
+  @Override
+  public void onAttach(Context context) {
+    super.onAttach(context);
+    mContext = context;
+  }
 
-    @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        if (mUnBinder != null)
-            mUnBinder.unbind();
-    }
+  @Override
+  public void onCreate(@Nullable Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    mHasPermission = Util.hasPermissions(EXTERNAL_STORAGE_PERMISSIONS);
+  }
 
-    public RecyclerView.Adapter getAdapter() {
-        return null;
+  @Override
+  public void onDestroyView() {
+    super.onDestroyView();
+    if (mUnBinder != null) {
+      mUnBinder.unbind();
     }
+  }
 
-    public void onResume() {
-        super.onResume();
-    }
+  public RecyclerView.Adapter getAdapter() {
+    return null;
+  }
 
-    public void onPause() {
-        super.onPause();
-    }
+  public void onResume() {
+    super.onResume();
+  }
 
-    protected String getStringSafely(@StringRes int res) {
-        if (isAdded())
-            return getString(res);
-        else
-            return App.getContext().getString(res);
-    }
+  public void onPause() {
+    super.onPause();
+  }
 
-    protected String getStringSafely(@StringRes int res, Object... args) {
-        if (isAdded())
-            return getString(res, args);
-        else
-            return App.getContext().getString(res, args);
+  protected String getStringSafely(@StringRes int res) {
+    if (isAdded()) {
+      return getString(res);
+    } else {
+      return App.getContext().getString(res);
     }
+  }
+
+  protected String getStringSafely(@StringRes int res, Object... args) {
+    if (isAdded()) {
+      return getString(res, args);
+    } else {
+      return App.getContext().getString(res, args);
+    }
+  }
 
 }

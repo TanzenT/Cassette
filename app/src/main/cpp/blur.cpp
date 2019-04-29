@@ -295,7 +295,7 @@ void stackblurJob(unsigned char* src,                ///< input image data
 }
 
 extern "C"
-JNIEXPORT void JNICALL Java_remix_myplayer_ui_blur_NativeBlurProcess_functionToBlur(JNIEnv* env, jclass clzz, jobject bitmapOut, jint radius, jint threadCount, jint threadIndex, jint round) {
+JNIEXPORT void JNICALL Java_tanzent_cassette_ui_blur_NativeBlurProcess_functionToBlur(JNIEnv* env, jclass clzz, jobject bitmapOut, jint radius, jint threadCount, jint threadIndex, jint round) {
 
     AndroidBitmapInfo infoOut;
     void* pixelsOut;

@@ -5,57 +5,62 @@ package tanzent.cassette.bean.mp3;
  */
 
 public class Album {
-    private int AlbumID;
-    private String Album;
-    private int ArtistID;
-    private String Artist;
-    private int Count;
 
-    public Album(int albumID, String album, int artistId, String artist, int count) {
-        AlbumID = albumID;
-        Album = album;
-        ArtistID = artistId;
-        Artist = artist;
-        Count = count;
-    }
+  private int AlbumID;
+  private String Album;
+  private int ArtistID;
+  private String Artist;
+  private int Count;
 
-    public int getCount() {
-        return Count;
-    }
+  public Album(int albumID) {
+    AlbumID = albumID;
+  }
 
-    public void setCount(int count) {
-        this.Count = count;
-    }
+  public Album(int albumID, String album, int artistId, String artist, int count) {
+    AlbumID = albumID;
+    Album = album;
+    ArtistID = artistId;
+    Artist = artist;
+    Count = count;
+  }
 
-    public int getAlbumID() {
-        return AlbumID;
-    }
+  public int getCount() {
+    return Count;
+  }
 
-    public void setAlbumID(int albumID) {
-        AlbumID = albumID;
-    }
+  public void setCount(int count) {
+    this.Count = count;
+  }
 
-    public String getAlbum() {
-        return Album;
-    }
+  public int getAlbumID() {
+    return AlbumID;
+  }
 
-    public void setAlbum(String album) {
-        Album = album;
-    }
+  public void setAlbumID(int albumID) {
+    AlbumID = albumID;
+  }
 
-    public int getArtistID() {
-        return ArtistID;
-    }
+  public String getAlbum() {
+    return Album;
+  }
 
-    public void setArtistID(int artistID) {
-        ArtistID = artistID;
-    }
+  public void setAlbum(String album) {
+    Album = album;
+  }
 
-    public String getArtist() {
-        return Artist;
-    }
+  public int getArtistID() {
+    return ArtistID;
+  }
 
-    public void setArtist(String artist) {
-        Artist = artist;
-    }
+  public void setArtistID(int artistID) {
+    ArtistID = artistID;
+  }
+
+  public String getArtist() {
+    return Artist;
+  }
+
+  public void setArtist(String artist) {
+    Artist = artist;
+  }
 }

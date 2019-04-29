@@ -1,88 +1,113 @@
 package tanzent.cassette;
 
 import android.content.Context;
+import android.content.res.Configuration;
 import android.graphics.Bitmap;
 import android.os.Build;
+import android.support.multidex.MultiDex;
 import android.support.multidex.MultiDexApplication;
-
 import com.facebook.common.util.ByteConstants;
 import com.facebook.drawee.backends.pipeline.Fresco;
 import com.facebook.imagepipeline.cache.MemoryCacheParams;
 import com.facebook.imagepipeline.core.ImagePipelineConfig;
-
+import com.squareup.leakcanary.LeakCanary;
 import io.reactivex.plugins.RxJavaPlugins;
 import tanzent.cassette.appshortcuts.DynamicShortcutManager;
-import tanzent.cassette.db.DBManager;
-import tanzent.cassette.db.DBOpenHelper;
+import tanzent.cassette.helper.LanguageHelper;
+import tanzent.cassette.misc.Migration;
 import tanzent.cassette.misc.cache.DiskCache;
-import tanzent.cassette.misc.exception.RxException;
-import tanzent.cassette.theme.ThemeStore;
-import tanzent.cassette.util.CrashHandler;
-import tanzent.cassette.util.LogUtil;
-import tanzent.cassette.util.MediaStoreUtil;
-import tanzent.cassette.util.PlayListUtil;
-import tanzent.cassette.util.SPUtil;
 import tanzent.cassette.util.Util;
+import timber.log.Timber;
+
+/**
+ * Created by Remix on 16-3-16.
+ */
 
 public class App extends MultiDexApplication {
-    private static Context mContext;
 
-    public static boolean IS_GOOGLEPLAY;
+  private static Context mContext;
 
-    @Override
-    public void onCreate() {
-        super.onCreate();
-        mContext = getApplicationContext();
+  //是否是googlePlay版本
+  public static boolean IS_GOOGLEPLAY;
 
-        if (!BuildConfig.DEBUG)
-            IS_GOOGLEPLAY = "google".equalsIgnoreCase(Util.getAppMetaData("UMENG_CHANNEL"));
-        initUtil();
-        initTheme();
+  @Override
+  protected void attachBaseContext(Context base) {
+    LanguageHelper.saveSystemCurrentLanguage();
+    super.attachBaseContext(LanguageHelper.setLocal(base));
+    MultiDex.install(this);
+  }
 
-        CrashHandler.getInstance().init(this);
+  @Override
+  public void onCreate() {
+    super.onCreate();
+    mContext = getApplicationContext();
 
+    setUp();
 
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N_MR1)
-            new DynamicShortcutManager(this).setUpShortcut();
+//    //异常捕获
+//    CrashHandler.getInstance().init(this);
 
-        loadLibrary();
-
-        RxJavaPlugins.setErrorHandler(throwable -> {
-            LogUtil.e("RxError", throwable);
-        });
-
-        if (SPUtil.getValue(this, SPUtil.SETTING_KEY.NAME, "CategoryReset", true)) {
-            SPUtil.putValue(this, SPUtil.SETTING_KEY.NAME, "CategoryReset", false);
-            SPUtil.putValue(mContext, SPUtil.SETTING_KEY.NAME, SPUtil.SETTING_KEY.LIBRARY_CATEGORY, "");
-        }
+    // 检测内存泄漏
+    if (!LeakCanary.isInAnalyzerProcess(this)) {
+      LeakCanary.install(this);
     }
 
-    private void initUtil() {
-        DBManager.initialInstance(new DBOpenHelper(this));
-        DiskCache.init(this);
-        MediaStoreUtil.setContext(this);
-        PlayListUtil.setContext(this);
+    // AppShortcut
+    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N_MR1) {
+      new DynamicShortcutManager(this).setUpShortcut();
     }
 
-    private void initTheme() {
-        ThemeStore.THEME_MODE = ThemeStore.loadThemeMode();
-        ThemeStore.THEME_COLOR = ThemeStore.loadThemeColor();
+    // 加载第三方库
+    loadLibrary();
 
-        ThemeStore.MATERIAL_COLOR_PRIMARY = ThemeStore.getMaterialPrimaryColorRes();
-        ThemeStore.MATERIAL_COLOR_PRIMARY_DARK = ThemeStore.getMaterialPrimaryDarkColorRes();
+    // 处理 RxJava2 取消订阅后，抛出的异常无法捕获，导致程序崩溃
+    if (!BuildConfig.DEBUG) {
+      RxJavaPlugins.setErrorHandler(throwable -> {
+        Timber.v(throwable);
+      });
     }
 
-    public static Context getContext() {
-        return mContext;
-    }
+  }
 
-    private void loadLibrary() {
-        final int cacheSize = (int) (Runtime.getRuntime().maxMemory() / 8);
-        ImagePipelineConfig config = ImagePipelineConfig.newBuilder(this)
-                .setBitmapMemoryCacheParamsSupplier(() -> new MemoryCacheParams(cacheSize, Integer.MAX_VALUE, cacheSize, Integer.MAX_VALUE, 2 * ByteConstants.MB))
-                .setBitmapsConfig(Bitmap.Config.RGB_565)
-                .setDownsampleEnabled(true)
-                .build();
-        Fresco.initialize(this, config);
-    }
+  private void setUp() {
+    DiskCache.init(this);
+    LanguageHelper.setApplicationLanguage(this);
+    Migration.migrationLibrary(this);
+    Migration.migrationPlayModel(this);
+  }
+
+  @Override
+  public void onConfigurationChanged(Configuration newConfig) {
+    super.onConfigurationChanged(newConfig);
+    LanguageHelper.onConfigurationChanged(getApplicationContext());
+  }
+
+
+  public static Context getContext() {
+    return mContext;
+  }
+
+  private void loadLibrary() {
+    // bugly
+    Context context = getApplicationContext();
+    // 获取当前包名
+    String packageName = context.getPackageName();
+    // 获取当前进程名
+    String processName = Util.getProcessName(android.os.Process.myPid());
+    // 设置是否为上报进程
+
+    // fresco
+    final int cacheSize = (int) (Runtime.getRuntime().maxMemory() / 8);
+    ImagePipelineConfig config = ImagePipelineConfig.newBuilder(this)
+        .setBitmapMemoryCacheParamsSupplier(
+            () -> new MemoryCacheParams(cacheSize, Integer.MAX_VALUE, cacheSize, Integer.MAX_VALUE,
+                2 * ByteConstants.MB))
+        .setBitmapsConfig(Bitmap.Config.RGB_565)
+        .setDownsampleEnabled(true)
+        .build();
+    Fresco.initialize(this, config);
+
+    // timer
+    Timber.plant(new Timber.DebugTree());
+  }
 }

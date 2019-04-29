@@ -1,258 +1,232 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="tanzent.cassette">
+<manifest
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  package="tanzent.cassette">
 
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <!-- <uses-permission android:name="android.permission.READ_PHONE_STATE" /> -->
-    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.VIBRATE" />
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
-    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
-    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-    <uses-permission android:name="android.hardware.sensor.accelerometer"/>
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+  <!-- <uses-permission android:name="android.permission.READ_PHONE_STATE" /> -->
+  <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+  <uses-permission android:name="android.permission.VIBRATE"/>
+  <uses-permission android:name="android.permission.WAKE_LOCK"/>
+  <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+  <uses-permission android:name="android.permission.READ_LOGS"/>
+  <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+  <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+  <uses-permission android:name="android.hardware.sensor.accelerometer"/>
 
-    <application
-        android:name="tanzent.cassette.App"
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+  <application
+    android:allowBackup="true"
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    android:name="tanzent.cassette.App"
+    android:supportsRtl="true"
+    android:theme="@style/AppTheme">
 
+    <!-- 主页面 -->
+    <activity
+      android:name="tanzent.cassette.ui.activity.MainActivity"
+      android:theme="@style/ActivityStyle">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <action android:name="android.intent.action.MUSIC_PLAYER"/>
 
-        <!-- 主页面 -->
-        <activity
-            android:name="tanzent.cassette.ui.activity.MainActivity"
-            android:theme="@style/ActivityStyle">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <action android:name="android.intent.action.MUSIC_PLAYER" />
+        <category android:name="android.intent.category.LAUNCHER"/>
+        <category android:name="android.intent.category.APP_MUSIC"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+      </intent-filter>
 
-                <category android:name="android.intent.category.LAUNCHER" />
-                <category android:name="android.intent.category.APP_MUSIC" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW"/>
 
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.DEFAULT"/>
 
-                <category android:name="android.intent.category.DEFAULT" />
+        <data android:scheme="content"/>
+        <data android:mimeType="audio/*"/>
+        <data android:mimeType="application/ogg"/>
+        <data android:mimeType="application/x-ogg"/>
+        <data android:mimeType="application/itunes"/>
+      </intent-filter>
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW"/>
 
-                <data android:scheme="content" />
-                <data android:mimeType="audio/*" />
-                <data android:mimeType="application/ogg" />
-                <data android:mimeType="application/x-ogg" />
-                <data android:mimeType="application/itunes" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.DEFAULT"/>
 
-                <category android:name="android.intent.category.DEFAULT" />
+        <data android:scheme="file"/>
+        <data android:mimeType="audio/*"/>
+        <data android:mimeType="application/ogg"/>
+        <data android:mimeType="application/x-ogg"/>
+        <data android:mimeType="application/itunes"/>
+      </intent-filter>
+      <intent-filter>
+        <action android:name="com.cyanogenmod.eleven.AUDIO_PLAYER"/>
 
-                <data android:scheme="file" />
-                <data android:mimeType="audio/*" />
-                <data android:mimeType="application/ogg" />
-                <data android:mimeType="application/x-ogg" />
-                <data android:mimeType="application/itunes" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="com.cyanogenmod.eleven.AUDIO_PLAYER" />
+        <category android:name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+      <intent-filter>
+        <action android:name="android.intent.action.PICK"/>
 
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-            <intent-filter>
-                <action android:name="android.intent.action.PICK" />
+        <category android:name="android.intent.category.DEFAULT"/>
+        <category android:name="android.intent.category.OPENABLE"/>
 
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.OPENABLE" />
+        <data android:mimeType="vnd.android.cursor.dir/audio"/>
+      </intent-filter>
+    </activity>
+    <!-- 播放界面 -->
+    <activity
+      android:name="tanzent.cassette.ui.activity.PlayerActivity"
+      android:parentActivityName="tanzent.cassette.ui.activity.MainActivity"
+      android:theme="@style/PlayerActivityStyle"
+      android:windowSoftInputMode="adjustPan">
+      <meta-data
+        android:name="android.support.PARENT_ACTIVITY"
+        android:value="tanzent.cassette.ui.activity.MainActivity"/>
+    </activity>
+    <!-- 搜索 -->
+    <activity
+      android:name="tanzent.cassette.ui.activity.SearchActivity"
+      android:theme="@style/ActivityStyle"/>
+    <!-- 子目录列表 -->
+    <activity
+      android:name="tanzent.cassette.ui.activity.ChildHolderActivity"
+      android:theme="@style/ActivityStyle"/>
+    <!--手动排序-->
+    <activity
+      android:name="tanzent.cassette.ui.activity.CustomSortActivity"
+      android:theme="@style/ActivityStyle"/>
+    <!-- 海报分享 -->
+    <activity
+      android:name="tanzent.cassette.ui.activity.RecordShareActivity"
+      android:theme="@style/ActivityStyle"/>
+    <!-- 最近添加 -->
+    <activity
+      android:name="tanzent.cassette.ui.activity.RecentlyActivity"
+      android:theme="@style/ActivityStyle"/>
+    <!-- 反馈 -->
+    <!-- 扫描大小设置 -->
+    <activity
+      android:name="tanzent.cassette.ui.activity.ScanActivity"
+      android:theme="@style/ActivityStyle"/>
+    <!-- 均衡器 -->
+    <activity
+      android:name="tanzent.cassette.ui.activity.EQActivity"
+      android:theme="@style/ActivityStyle"/>
+    <!-- 设置 -->
+    <activity
+      android:name="tanzent.cassette.ui.activity.SettingActivity"
+      android:theme="@style/ActivityStyle"/>
+    <!-- 播放列表歌曲选择 -->
+    <activity
+      android:name="tanzent.cassette.ui.activity.SongChooseActivity"
+      android:theme="@style/ActivityStyle"/>
+    <!-- 锁屏页 -->
+    <activity
+      android:excludeFromRecents="true"
+      android:exported="false"
+      android:launchMode="singleInstance"
+      android:name="tanzent.cassette.ui.activity.LockScreenActivity"
+      android:theme="@style/LockScreenActivity"/>
+    <!-- shortcut过渡 -->
+    <activity
+      android:excludeFromRecents="true"
+      android:launchMode="singleInstance"
+      android:name="tanzent.cassette.appshortcuts.AppShortcutActivity"
+      android:theme="@style/AppShortcut"/>
 
-                <data android:mimeType="vnd.android.cursor.dir/audio" />
-            </intent-filter>
-        </activity>
-        <!-- 播放界面 -->
-        <activity
-            android:name="tanzent.cassette.ui.activity.PlayerActivity"
-            android:parentActivityName="tanzent.cassette.ui.activity.MainActivity"
-            android:theme="@style/AudioHolderStyle"
-            android:windowSoftInputMode="adjustPan">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="tanzent.cassette.ui.activity.MainActivity" />
-        </activity>
-        <!-- 搜索 -->
-        <activity
-            android:name="tanzent.cassette.ui.activity.SearchActivity"
-            android:theme="@style/ActivityStyle" />
-        <!-- 子目录列表 -->
-        <activity
-            android:name="tanzent.cassette.ui.activity.ChildHolderActivity"
-            android:theme="@style/ActivityStyle" />
-        <!--手动排序-->
-        <activity android:name="tanzent.cassette.ui.activity.CustomSortActivity"
-            android:theme="@style/ActivityStyle"/>
-        <!-- 海报分享 -->
-        <activity
-            android:name="tanzent.cassette.ui.activity.RecordShareActivity"
-            android:theme="@style/ActivityStyle" />
-        <!-- 关于 -->
-        <activity
-            android:name="tanzent.cassette.ui.activity.AboutActivity"
-            android:theme="@style/ActivityStyle" />
-        <!-- 最近添加 -->
-        <activity
-            android:name="tanzent.cassette.ui.activity.RecentlyActivity"
-            android:theme="@style/ActivityStyle" />
-        <!-- 反馈 -->
-        <activity
-            android:name="tanzent.cassette.ui.activity.FeedBackActivity"
-            android:theme="@style/ActivityStyle" />
-        <!-- 扫描大小设置 -->
-        <activity
-            android:name="tanzent.cassette.ui.activity.ScanActivity"
-            android:theme="@style/ActivityStyle" />
-        <!-- 均衡器 -->
-        <activity
-            android:name="tanzent.cassette.ui.activity.EQActivity"
-            android:theme="@style/ActivityStyle" />
-        <activity android:name="tanzent.cassette.ui.activity.SupportDevelopActivity"
-            android:theme="@style/ActivityStyle"/>
-        <!-- 设置 -->
-        <activity
-            android:name="tanzent.cassette.ui.activity.SettingActivity"
-            android:theme="@style/ActivityStyle" />
-        <!-- 播放列表歌曲选择 -->
-        <activity
-            android:name="tanzent.cassette.ui.activity.SongChooseActivity"
-            android:theme="@style/ActivityStyle" />
-        <!-- 锁屏页 -->
-        <activity
-            android:name="tanzent.cassette.ui.activity.LockScreenActivity"
-            android:excludeFromRecents="true"
-            android:exported="false"
-            android:launchMode="singleInstance"
-            android:theme="@style/LockScreenActivity" />
-        <!-- shortcut过渡 -->
-        <activity
-            android:name="tanzent.cassette.appshortcuts.AppShortcutActivity"
-            android:excludeFromRecents="true"
-            android:launchMode="singleInstance"
-            android:theme="@style/AppShortcut" />
-        <!-- 添加歌曲到播放列表 -->
-        <activity
-            android:name="tanzent.cassette.ui.dialog.AddtoPlayListDialog"
-            android:theme="@style/BaseDialogTheme" />
-        <!-- 播放队列 -->
-        <activity
-            android:name="tanzent.cassette.ui.dialog.PlayQueueDialog"
-            android:theme="@style/BaseDialogTheme" />
-        <!-- 选项 -->
-        <activity
-            android:name="tanzent.cassette.ui.dialog.OptionDialog"
-            android:theme="@style/BaseDialogTheme" />
-        <!-- 定时停止 -->
-        <activity
-            android:name="tanzent.cassette.ui.dialog.TimerDialog"
-            android:theme="@style/BaseDialogTheme" />
-        <!-- 主题色选择 -->
-        <activity
-            android:name="tanzent.cassette.ui.dialog.ThemeDialog"
-            android:theme="@style/BaseDialogTheme" />
-
-        <!-- 图片裁剪 -->
-        <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
+    <!-- 图片裁剪 -->
+    <activity android:name="com.soundcloud.android.crop.CropImageActivity"/>
 
 
-        <!-- 线控 -->
-        <receiver android:name="tanzent.cassette.misc.receiver.MediaButtonReceiver">
-            <intent-filter>
-                <action android:name="android.intent.action.MEDIA_BUTTON" />
-            </intent-filter>
-        </receiver>
+    <!-- 线控 -->
+    <receiver android:name="tanzent.cassette.misc.receiver.MediaButtonReceiver">
+      <intent-filter>
+        <action android:name="android.intent.action.MEDIA_BUTTON"/>
+      </intent-filter>
+    </receiver>
 
-        <receiver android:name="tanzent.cassette.misc.receiver.ExitReceiver"
-            android:exported="false">
-            <intent-filter>
-                <action android:name="remix.music.EXIT" />
-            </intent-filter>
-        </receiver>
+    <receiver
+      android:exported="false"
+      android:name="tanzent.cassette.misc.receiver.ExitReceiver">
+      <intent-filter>
+        <action android:name="tanzent.cassette.EXIT"/>
+      </intent-filter>
+    </receiver>
 
-        <service android:name="tanzent.cassette.service.MusicService"
-            android:exported="false"/>
-        <service android:name="tanzent.cassette.misc.update.DownloadService"
-            android:exported="false"/>
+    <service
+      android:exported="false"
+      android:name="tanzent.cassette.service.MusicService"/>
 
-        <provider
-            android:name="tanzent.cassette.db.DBContentProvider"
-            android:authorities="tanzent.cassette"
-            android:exported="false" />
+    <!-- 桌面部件 -->
+    <receiver
+      android:label="@string/app_widget_big_name"
+      android:name="tanzent.cassette.appwidgets.big.AppWidgetBig">
+      <intent-filter>
+        <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+      </intent-filter>
 
-        <!-- 桌面部件 -->
-        <receiver android:name="tanzent.cassette.appwidgets.big.AppWidgetBig"
-            android:label="@string/app_widget_big_name">
-            <intent-filter>
-                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-            </intent-filter>
+      <meta-data
+        android:name="android.appwidget.provider"
+        android:resource="@xml/appwidget_big_info"/>
+    </receiver>
+    <receiver
+      android:label="@string/app_widget_medium_name"
+      android:name="tanzent.cassette.appwidgets.medium.AppWidgetMedium">
+      <intent-filter>
+        <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+      </intent-filter>
 
-            <meta-data
-                android:name="android.appwidget.provider"
-                android:resource="@xml/appwidget_big_info" />
-        </receiver>
-        <receiver android:name="tanzent.cassette.appwidgets.medium.AppWidgetMedium"
-            android:label="@string/app_widget_medium_name">
-            <intent-filter>
-                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-            </intent-filter>
+      <meta-data
+        android:name="android.appwidget.provider"
+        android:resource="@xml/appwidget_medium_info"/>
+    </receiver>
+    <receiver
+      android:label="@string/app_widget_small_name"
+      android:name="tanzent.cassette.appwidgets.small.AppWidgetSmall">
+      <intent-filter>
+        <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+      </intent-filter>
 
-            <meta-data
-                android:name="android.appwidget.provider"
-                android:resource="@xml/appwidget_medium_info" />
-        </receiver>
-        <receiver android:name="tanzent.cassette.appwidgets.small.AppWidgetSmall"
-            android:label="@string/app_widget_small_name">
-            <intent-filter>
-                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-            </intent-filter>
+      <meta-data
+        android:name="android.appwidget.provider"
+        android:resource="@xml/appwidget_small_info"/>
+    </receiver>
+    <!--透明桌面部件-->
+    <receiver
+      android:label="@string/app_widget_medium_transparent_name"
+      android:name="tanzent.cassette.appwidgets.medium.AppWidgetMediumTransparent">
+      <intent-filter>
+        <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+      </intent-filter>
 
-            <meta-data
-                android:name="android.appwidget.provider"
-                android:resource="@xml/appwidget_small_info" />
-        </receiver>
-        <!--透明桌面部件-->
-        <receiver android:name="tanzent.cassette.appwidgets.medium.AppWidgetMediumTransparent"
-            android:label="@string/app_widget_medium_transparent_name">
-            <intent-filter>
-                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-            </intent-filter>
+      <meta-data
+        android:name="android.appwidget.provider"
+        android:resource="@xml/appwidget_medium_transparent_info"/>
+    </receiver>
+    <receiver
+      android:label="@string/app_widget_small_transparent_name"
+      android:name="tanzent.cassette.appwidgets.small.AppWidgetSmallTransparent">
+      <intent-filter>
+        <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+      </intent-filter>
 
-            <meta-data
-                android:name="android.appwidget.provider"
-                android:resource="@xml/appwidget_medium_transparent_info" />
-        </receiver>
-        <receiver android:name="tanzent.cassette.appwidgets.small.AppWidgetSmallTransparent"
-            android:label="@string/app_widget_small_transparent_name">
-            <intent-filter>
-                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-            </intent-filter>
+      <meta-data
+        android:name="android.appwidget.provider"
+        android:resource="@xml/appwidget_small_transparent_info"/>
+    </receiver>
 
-            <meta-data
-                android:name="android.appwidget.provider"
-                android:resource="@xml/appwidget_small_transparent_info" />
-        </receiver>
+    <provider
+      android:authorities="${applicationId}.fileprovider"
+      android:exported="false"
+      android:grantUriPermissions="true"
+      android:name="android.support.v4.content.FileProvider">
+      <meta-data
+        android:name="android.support.FILE_PROVIDER_PATHS"
+        android:resource="@xml/provider_paths"/>
+    </provider>
 
-        <provider
-            android:name="android.support.v4.content.FileProvider"
-            android:authorities="${applicationId}.fileprovider"
-            android:exported="false"
-            android:grantUriPermissions="true">
-            <meta-data
-                android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/provider_paths"/>
-        </provider>
-
-    </application>
+  </application>
 
 </manifest>

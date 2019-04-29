@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="?attr/background_library_color">
+
+  <tanzent.cassette.ui.widget.fastcroll_recyclerview.FastScrollRecyclerView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="?attr/background_grid_color">
-
-    <tanzent.cassette.ui.widget.fastcroll_recyclerview.FastScrollRecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/artist_recycleview"
-        app:bubbleColor="?attr/colorAccent"
-        app:handleColor="?attr/colorAccent"
-        app:hideScrollbar="true"
-        app:showTrack="true"/>
+    android:id="@+id/recyclerView"
+    app:hideScrollbar="true"
+    app:showTrack="true"/>
 </RelativeLayout>

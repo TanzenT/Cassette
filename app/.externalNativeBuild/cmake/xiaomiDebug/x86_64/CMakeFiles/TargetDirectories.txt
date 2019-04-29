@@ -1,3 +1,0 @@
-D:/AndroidStudio/Cassette/app/.externalNativeBuild/cmake/xiaomiDebug/x86_64/CMakeFiles/edit_cache.dir
-D:/AndroidStudio/Cassette/app/.externalNativeBuild/cmake/xiaomiDebug/x86_64/CMakeFiles/blur.dir
-D:/AndroidStudio/Cassette/app/.externalNativeBuild/cmake/xiaomiDebug/x86_64/CMakeFiles/rebuild_cache.dir
