@@ -50,7 +50,7 @@
   <string name="add_error">추가 실패</string>
   <string name="add_to_playlist">재생목록에 추가</string>
   <string name="add_song_playlist_success">%1$d개의 곡을 %2$s에 성공적으로 추가했습니다.</string>
-  <string name="delete_multi_song">%d개의 곡을 성공적으로 삭제했습니다.</string>
+  <string name="delete_multi_song">%d개의 곡을 성공적으로 삭제했습니다.\n카세트 앱을 새로고칩니다.</string>
   <string name="add_song_playqueue_success">%1$d 개의 곡이 재생대기열에 추가되었습니다.</string>
   <string name="add_song_playlist_error">재생목록에 노래를 추가하던 도중 오류가 발생했습니다.</string>
 

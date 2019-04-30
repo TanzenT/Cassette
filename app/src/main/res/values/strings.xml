@@ -50,7 +50,7 @@
   <string name="add_error">Add failed</string>
   <string name="add_to_playlist">Add to playlist</string>
   <string name="add_song_playlist_success">Add %1$d songs into %2$s</string>
-  <string name="delete_multi_song">Remove %d songs</string>
+  <string name="delete_multi_song">Remove %d songs.\nRefreshing Cassette...</string>
   <string name="add_song_playqueue_success">Add %1$d songs into playing queue </string>
   <string name="add_song_playlist_error">Add songs to playlist failed</string>
 
