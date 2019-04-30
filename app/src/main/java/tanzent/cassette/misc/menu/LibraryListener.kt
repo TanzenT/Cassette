@@ -3,6 +3,7 @@ package tanzent.cassette.misc.menu
 import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Context
+import android.content.Intent
 import android.provider.MediaStore
 import android.support.v7.widget.PopupMenu
 import android.view.MenuItem
@@ -22,6 +23,7 @@ import tanzent.cassette.service.Command
 import tanzent.cassette.service.MusicService.Companion.EXTRA_POSITION
 import tanzent.cassette.theme.Theme
 import tanzent.cassette.theme.ThemeStore
+import tanzent.cassette.ui.activity.MainActivity
 import tanzent.cassette.ui.activity.base.BaseActivity
 import tanzent.cassette.ui.dialog.AddtoPlayListDialog
 import tanzent.cassette.util.Constants
@@ -120,6 +122,11 @@ class LibraryListener(private val context: Context, //专辑id 艺术家id 歌�
                           .compose(applySingleScheduler())
                           .subscribe({
                             ToastUtil.show(context, if (it) R.string.delete_success else R.string.delete_error)
+                              val intent = Intent(context, MainActivity::class.java)
+                              intent.action = Intent.ACTION_MAIN
+                              intent.addCategory(Intent.CATEGORY_LAUNCHER)
+                              intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
+                              context.startActivity(intent)
                           }, {
                             ToastUtil.show(context, R.string.delete_error)
                           })
