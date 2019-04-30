@@ -2,6 +2,7 @@ package tanzent.cassette.ui.misc
 
 import android.annotation.SuppressLint
 import android.app.Activity
+import android.content.Intent
 import android.support.v7.widget.RecyclerView
 import android.text.TextUtils
 import android.view.View
@@ -151,7 +152,11 @@ class MultipleChoice<T>(private val activity: Activity, val type: Int) : View.On
                     }
                     .subscribe(Consumer {
                       ToastUtil.show(activity, activity.getString(R.string.delete_multi_song, it))
-
+                      val intent = Intent(activity, MainActivity::class.java)
+                      intent.action = Intent.ACTION_MAIN
+                      intent.addCategory(Intent.CATEGORY_LAUNCHER)
+                      intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
+                      activity.startActivity(intent)
                     })
 
               }.show()
