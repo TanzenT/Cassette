@@ -203,6 +203,7 @@ public class PlayerActivity extends BaseMusicActivity implements FileChooserDial
   private CoverFragment mCoverFragment;
   private RecordFragment mRecordFragment;
 
+
 //  private static final String SCALE_WIDTH = "SCALE_WIDTH";
 //  private static final String SCALE_HEIGHT = "SCALE_HEIGHT";
 //  private static final String TRANSITION_X = "TRANSITION_X";

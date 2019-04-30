@@ -159,6 +159,7 @@ public class SettingActivity extends ToolbarActivity implements FolderChooserDia
 
   private List<Disposable> mDisposables = new ArrayList<>();
 
+
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -167,7 +168,6 @@ public class SettingActivity extends ToolbarActivity implements FolderChooserDia
     ButterKnife.bind(this);
     setUpToolbar(getString(R.string.setting));
     mHandler = new MsgHandler(this);
-
     //读取重启aitivity之前的数据
     if (savedInstanceState != null) {
       mNeedRecreate = savedInstanceState.getBoolean(EXTRA_RECREATE);
@@ -671,8 +671,12 @@ public class SettingActivity extends ToolbarActivity implements FolderChooserDia
     SPUtil.deleteValue(this, SPUtil.SETTING_KEY.NAME, SPUtil.SETTING_KEY.BLACKLIST_SONG);
     getContentResolver().notifyChange(MediaStore.Audio.Media.EXTERNAL_CONTENT_URI, null);
     ToastUtil.show(mContext, R.string.alread_restore_songs);
+    Intent intent = new Intent(mContext, MainActivity.class);
+    intent.setAction(Intent.ACTION_MAIN);
+    intent.addCategory(Intent.CATEGORY_LAUNCHER);
+    intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+    startActivity(intent);
   }
-
 
   /**
    * 播放列表导出

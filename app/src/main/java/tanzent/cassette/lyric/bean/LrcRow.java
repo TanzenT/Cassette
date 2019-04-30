@@ -29,10 +29,6 @@ public class LrcRow implements Comparable<LrcRow> {
    **/
   private String mContent;
   /**
-   * 歌词内容翻译
-   */
-  private String mTranslate;
-  /**
    * 该行歌词显示的总时间
    **/
   private long mTotalTime;
@@ -63,10 +59,6 @@ public class LrcRow implements Comparable<LrcRow> {
 
   public int getContentHeight() {
     return mContentHeight;
-  }
-
-  public void setTranslateHeight(int height) {
-    this.mTranslateHeight = height;
   }
 
   public int getTranslateHeight() {
@@ -105,18 +97,6 @@ public class LrcRow implements Comparable<LrcRow> {
     this.mContent = content;
   }
 
-  public String getTranslate() {
-    return mTranslate;
-  }
-
-  public void setTranslate(String translate) {
-    mTranslate = translate;
-  }
-
-  public boolean hasTranslate() {
-    return !TextUtils.isEmpty(mTranslate);
-  }
-
   public LrcRow() {
   }
 
@@ -125,7 +105,6 @@ public class LrcRow implements Comparable<LrcRow> {
     mTime = lrcRow.getTime();
     mTotalTime = lrcRow.getTotalTime();
     mContent = lrcRow.getContent();
-    mTranslate = lrcRow.getTranslate();
   }
 
   public LrcRow(String timeStr, int time, String content) {
@@ -134,14 +113,14 @@ public class LrcRow implements Comparable<LrcRow> {
     mTime = time;
     if (TextUtils.isEmpty(content)) {
       mContent = "";
-      mTranslate = "";
       return;
     }
     String[] mulitiContent = content.split("\t");
     mContent = mulitiContent[0];
+    /*
     if (mulitiContent.length > 1) {
       mTranslate = mulitiContent[1];
-    }
+    }*/
   }
 
   /**

@@ -8,6 +8,7 @@ import static tanzent.cassette.theme.ThemeStore.getMaterialPrimaryColorReverse;
 import static tanzent.cassette.util.ImageUriUtil.getSearchRequestWithAlbumType;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;
 import android.content.Context;
@@ -92,6 +93,7 @@ public class MainActivity extends MenuActivity {
   public static final String EXTRA_REFRESH_ADAPTER = "needRefreshAdapter";
   public static final String EXTRA_REFRESH_LIBRARY = "needRefreshLibrary";
   public static final String EXTRA_CATEGORY = "Category";
+  public static Activity mainactivity;
 
   public static final long DELAY_HIDE_LOCATION = TimeUnit.SECONDS.toMillis(4);
 
@@ -157,6 +159,7 @@ public class MainActivity extends MenuActivity {
     //handler
     mRefreshHandler = new MsgHandler(this);
     mRefreshHandler.postDelayed(this::parseIntent, 500);
+    mainactivity = MainActivity.this;
   }
 
   @Override

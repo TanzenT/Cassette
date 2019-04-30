@@ -71,7 +71,7 @@ class LyricFragment : BaseMusicFragment() {
     super.onViewCreated(view, savedInstanceState)
     //黑色主题着色按钮
     val themeRes = ThemeStore.getThemeRes()
-    if(themeRes == R.style.Theme_Cassette_Base_Black || themeRes == R.style.Theme_Cassette_Dark){
+    if(themeRes == R.style.Theme_Cassette_Black || themeRes == R.style.Theme_Cassette_Dark){
       iv_offset_reduce_arrow.setColorFilter(Color.WHITE)
       iv_offset_reduce_second.setColorFilter(Color.WHITE)
       offsetReset.setColorFilter(Color.WHITE)

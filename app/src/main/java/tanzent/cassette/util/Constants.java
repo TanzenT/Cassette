@@ -31,6 +31,6 @@ public class Constants {
   public final static int SYSTEM_LOCKSCREEN = 1;
   public final static int CLOSE_LOCKSCREEN = 2;
 
-  public final static String LASTFM_API_KEY = "LAST_FM_KEY_HERE";
+  public final static String LASTFM_API_KEY = "LASTFM_API_KEY_HERE";
 
 }

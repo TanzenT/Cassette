@@ -282,10 +282,10 @@ public class LrcView extends View implements ILrcView {
    */
   private void drawLrcRow(Canvas canvas, TextPaint textPaint, int availableWidth, LrcRow lrcRow) {
     drawText(canvas, textPaint, availableWidth, lrcRow.getContent());
-    if (lrcRow.hasTranslate()) {
+    /*if (lrcRow.hasTranslate()) {
 //            mRowY += DEFAULT_SPACING_PADDING;
       drawText(canvas, textPaint, availableWidth, lrcRow.getTranslate());
-    }
+    }*/
     mRowY += mLinePadding;
   }
 
@@ -475,9 +475,9 @@ public class LrcView extends View implements ILrcView {
 //            }
       for (LrcRow lrcRow : mLrcRows) {
         lrcRow.setContentHeight(getSingleLineHeight(lrcRow.getContent()));
-        if (lrcRow.hasTranslate()) {
+        /*if (lrcRow.hasTranslate()) {
           lrcRow.setTranslateHeight(getSingleLineHeight(lrcRow.getTranslate()));
-        }
+        }*/
         lrcRow.setTotalHeight(lrcRow.getTranslateHeight() + lrcRow.getContentHeight());
         mTotalHeight += lrcRow.getTotalHeight();
       }

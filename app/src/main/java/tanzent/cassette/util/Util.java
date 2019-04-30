@@ -1,6 +1,7 @@
 package tanzent.cassette.util;
 
 import android.Manifest;
+import android.app.Activity;
 import android.app.ActivityManager;
 import android.app.Service;
 import android.content.BroadcastReceiver;
@@ -36,6 +37,11 @@ import java.util.List;
 import tanzent.cassette.App;
 import tanzent.cassette.R;
 import tanzent.cassette.bean.mp3.Song;
+import tanzent.cassette.ui.activity.MainActivity;
+import tanzent.cassette.ui.activity.SettingActivity;
+
+import static tanzent.cassette.ui.activity.MainActivity.EXTRA_REFRESH_ADAPTER;
+import static tanzent.cassette.ui.activity.MainActivity.EXTRA_REFRESH_LIBRARY;
 
 /**
  * Created by Remix on 2015/11/30.
@@ -486,21 +492,35 @@ public class Util {
   public static Intent createShareSongFileIntent(@NonNull final Song song, Context context) {
     try {
       Parcelable parcelable = FileProvider.getUriForFile(context,
-          context.getPackageName() + ".fileprovider",
-          new File(song.getUrl()));
+              context.getPackageName() + ".fileprovider",
+              new File(song.getUrl()));
       return new Intent()
-          .setAction(Intent.ACTION_SEND)
-          .putExtra(Intent.EXTRA_STREAM,
-              parcelable)
-          .addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
-          .setType("audio/*");
+              .setAction(Intent.ACTION_SEND)
+              .putExtra(Intent.EXTRA_STREAM,
+                      parcelable)
+              .addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
+              .setType("audio/*");
     } catch (IllegalArgumentException e) {
       //the path is most likely not like /storage/emulated/0/... but something like /storage/28C7-75B0/...
       e.printStackTrace();
       Toast.makeText(context, context.getString(R.string.cant_share_song), Toast.LENGTH_SHORT)
-          .show();
+              .show();
       return new Intent();
     }
+  }
+
+  @NonNull
+  public static Intent refreshAdapterAndLibrary(@NonNull Context context) {
+    //是否需要刷新adapter
+    boolean mNeedRefreshAdapter = true;
+    //是否需要刷新library
+    boolean mNeedRefreshLibrary = true;
+    MainActivity MA = (MainActivity) MainActivity.mainactivity;
+    MA.finish();
+
+    return new Intent(context, MainActivity.class)
+            .putExtra(EXTRA_REFRESH_ADAPTER, mNeedRefreshAdapter)
+            .putExtra(EXTRA_REFRESH_LIBRARY, mNeedRefreshLibrary);
   }
 
   @NonNull

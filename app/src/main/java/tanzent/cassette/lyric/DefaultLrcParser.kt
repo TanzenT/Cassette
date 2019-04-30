@@ -54,13 +54,13 @@ class DefaultLrcParser : ILrcParser {
             strBuilder.append("[")
             strBuilder.append(lrcRow.timeStr)
             strBuilder.append("]")
-            strBuilder.append(lrcRow.content).append("\n")
+            strBuilder.append(lrcRow.content).append("\n")/*
             if (lrcRow.hasTranslate()) {
               strBuilder.append("[")
               strBuilder.append(lrcRow.timeStr)
               strBuilder.append("]")
               strBuilder.append(lrcRow.translate).append("\n")
-            }
+            }*/
             appendText(strBuilder.toString())
           }
         }
@@ -110,7 +110,7 @@ class DefaultLrcParser : ILrcParser {
         tmp.content = currentRow.content
         tmp.time = currentRow.time
         tmp.timeStr = currentRow.timeStr
-        tmp.translate = nextRow.content
+        /*tmp.translate = nextRow.content*/
         combineLrcRows.add(tmp)
         index++
       } else { // 普通歌词
