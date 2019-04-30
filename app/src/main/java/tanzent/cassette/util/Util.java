@@ -510,20 +510,6 @@ public class Util {
   }
 
   @NonNull
-  public static Intent refreshAdapterAndLibrary(@NonNull Context context) {
-    //是否需要刷新adapter
-    boolean mNeedRefreshAdapter = true;
-    //是否需要刷新library
-    boolean mNeedRefreshLibrary = true;
-    MainActivity MA = (MainActivity) MainActivity.mainactivity;
-    MA.finish();
-
-    return new Intent(context, MainActivity.class)
-            .putExtra(EXTRA_REFRESH_ADAPTER, mNeedRefreshAdapter)
-            .putExtra(EXTRA_REFRESH_LIBRARY, mNeedRefreshLibrary);
-  }
-
-  @NonNull
   public static Intent createShareImageFileIntent(@NonNull final File file, Context context) {
     try {
       Parcelable parcelable = FileProvider.getUriForFile(context,

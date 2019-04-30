@@ -16,6 +16,7 @@ import tanzent.cassette.request.network.RxUtil.applySingleScheduler
 import tanzent.cassette.service.Command
 import tanzent.cassette.service.MusicService.Companion.EXTRA_SONG
 import tanzent.cassette.theme.Theme
+import tanzent.cassette.ui.activity.MainActivity
 import tanzent.cassette.ui.misc.Tag
 import tanzent.cassette.ui.dialog.AddtoPlayListDialog
 import tanzent.cassette.util.*
@@ -88,9 +89,11 @@ class SongPopupListener(activity: AppCompatActivity,
                 DeleteHelper
                     .deleteSong(song.id, dialog.isPromptCheckBoxChecked, isDeletePlayList, playListName)
                     .subscribe({ success -> ToastUtil.show(activity, if (success) R.string.delete_success else R.string.delete_error) }, { ToastUtil.show(activity, R.string.delete_error) })
-                activity.startActivity(
-                        Intent.createChooser(Util.refreshAdapterAndLibrary(activity), null)
-                )
+                val intent = Intent(activity, MainActivity::class.java)
+                intent.action = Intent.ACTION_MAIN
+                intent.addCategory(Intent.CATEGORY_LAUNCHER)
+                intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
+                activity.startActivity(intent)
               }
             }
             .show()
