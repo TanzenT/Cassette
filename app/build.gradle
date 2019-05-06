@@ -25,8 +25,8 @@ android {
         applicationId "tanzent.cassette"
         minSdkVersion 17
         targetSdkVersion 26
-        versionCode 107
-        versionName "1.9.1_HF"
+        versionCode 108
+        versionName "1.9.2_HF"
 
         flavorDimensions "default"
         vectorDrawables.useSupportLibrary = true

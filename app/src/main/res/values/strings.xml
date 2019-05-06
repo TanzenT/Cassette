@@ -1,5 +1,5 @@
 <resources>
-  <string name="version">v1.9.0</string>
+  <string name="version">v1.9.2</string>
   <string name="app_name">Cassette</string>
 
   <string name="tab_song">Song</string>

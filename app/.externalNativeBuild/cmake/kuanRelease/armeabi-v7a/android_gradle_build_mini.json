@@ -1,18 +1,16 @@
 {
   "buildFiles": [
-    "/Users/tanzent/Library/Android/sdk/ndk-bundle/build/cmake/android.toolchain.cmake",
-    "/Users/tanzent/Library/Android/sdk/ndk-bundle/build/cmake/platforms.cmake",
-    "/Volumes/Data/AndroidStudio/Cassette/app/CMakeLists.txt"
+    "D:\\AndroidStudio\\Cassette\\app\\CMakeLists.txt"
   ],
   "cleanCommands": [
-    "/Users/tanzent/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake --build /Volumes/Data/AndroidStudio/Cassette/app/.externalNativeBuild/cmake/kuanRelease/armeabi-v7a --target clean"
+    "C:\\Users\\TanzenT\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\AndroidStudio\\Cassette\\app\\.externalNativeBuild\\cmake\\kuanRelease\\armeabi-v7a --target clean"
   ],
   "libraries": {
     "blur-Release-armeabi-v7a": {
       "artifactName": "blur",
-      "buildCommand": "/Users/tanzent/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake --build /Volumes/Data/AndroidStudio/Cassette/app/.externalNativeBuild/cmake/kuanRelease/armeabi-v7a --target blur",
+      "buildCommand": "C:\\Users\\TanzenT\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\AndroidStudio\\Cassette\\app\\.externalNativeBuild\\cmake\\kuanRelease\\armeabi-v7a --target blur",
       "abi": "armeabi-v7a",
-      "output": "/Volumes/Data/AndroidStudio/Cassette/app/build/intermediates/cmake/kuan/release/obj/armeabi-v7a/libblur.so"
+      "output": "D:\\AndroidStudio\\Cassette\\app\\build\\intermediates\\cmake\\kuan\\release\\obj\\armeabi-v7a\\libblur.so"
     }
   }
 }

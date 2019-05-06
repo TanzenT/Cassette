@@ -1,9 +1,3 @@
 # ninja log v5
-0	2567	1556535404	CMakeFiles/blur.dir/src/main/cpp/blur.cpp.o	cd631a39de397247
-2568	2715	1556535404	../../../../build/intermediates/cmake/google/debug/obj/armeabi-v7a/libblur.so	ccc67caa2be5dd6c
-2	1748	1556538677	CMakeFiles/blur.dir/src/main/cpp/blur.cpp.o	cd631a39de397247
-1748	1907	1556538677	../../../../build/intermediates/cmake/google/debug/obj/armeabi-v7a/libblur.so	ccc67caa2be5dd6c
-2	1282	1556544620	CMakeFiles/blur.dir/src/main/cpp/blur.cpp.o	cd631a39de397247
-1282	1420	1556544620	../../../../build/intermediates/cmake/google/debug/obj/armeabi-v7a/libblur.so	ccc67caa2be5dd6c
-2	1466	1556557306	CMakeFiles/blur.dir/src/main/cpp/blur.cpp.o	cd631a39de397247
-1467	1584	1556557306	../../../../build/intermediates/cmake/google/debug/obj/armeabi-v7a/libblur.so	ccc67caa2be5dd6c
+8	18320	0	CMakeFiles/blur.dir/src/main/cpp/blur.cpp.o	9fbc803c8c17e81c
+18321	27592	0	../../../../build/intermediates/cmake/google/debug/obj/armeabi-v7a/libblur.so	50920510638627f4

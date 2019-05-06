@@ -19,7 +19,7 @@ class MultiPopupWindow(activity: Activity) : PopupWindow(activity) {
     val ta = activity.obtainStyledAttributes(intArrayOf(android.R.attr.actionBarSize))
     val actionBarSize = ta.getDimensionPixelSize(0, 0)
     ta.recycle()
-    height = actionBarSize
+    height = StatusBarUtil.getStatusBarHeight(activity) + actionBarSize
     setBackgroundDrawable(ColorDrawable(ThemeStore.getMaterialPrimaryColor()))
     isFocusable = false
     isOutsideTouchable = false

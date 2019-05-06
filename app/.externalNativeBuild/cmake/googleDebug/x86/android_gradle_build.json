@@ -1,40 +1,38 @@
+
 {
-  "stringTable": {
-    "0": "/Volumes/Data/AndroidStudio/Cassette/app/.externalNativeBuild/cmake/googleDebug/x86",
-    "1": "-g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -stdlib=libc++  -O0 -fno-limit-debug-info  -fPIC  "
-  },
-  "buildFiles": [
-    "/Users/tanzent/Library/Android/sdk/ndk-bundle/build/cmake/android.toolchain.cmake",
-    "/Users/tanzent/Library/Android/sdk/ndk-bundle/build/cmake/platforms.cmake",
-    "/Volumes/Data/AndroidStudio/Cassette/app/CMakeLists.txt"
-  ],
-  "cleanCommands": [
-    "/Users/tanzent/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake --build /Volumes/Data/AndroidStudio/Cassette/app/.externalNativeBuild/cmake/googleDebug/x86 --target clean"
-  ],
-  "libraries": {
-    "blur-Debug-x86": {
-      "buildCommand": "/Users/tanzent/Library/Android/sdk/cmake/3.10.2.4988404/bin/cmake --build /Volumes/Data/AndroidStudio/Cassette/app/.externalNativeBuild/cmake/googleDebug/x86 --target blur",
-      "buildType": "debug",
-      "toolchain": "653158305",
-      "abi": "x86",
-      "artifactName": "blur",
-      "files": [
-        {
-          "src": "/Volumes/Data/AndroidStudio/Cassette/app/src/main/cpp/blur.cpp",
-          "flagsOrdinal": 1,
-          "workingDirectoryOrdinal": 0
-        }
-      ],
-      "output": "/Volumes/Data/AndroidStudio/Cassette/app/build/intermediates/cmake/google/debug/obj/x86/libblur.so"
-    }
-  },
-  "toolchains": {
-    "653158305": {
-      "cppCompilerExecutable": "/Users/tanzent/Library/Android/sdk/ndk-bundle/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++"
-    }
-  },
-  "cFileExtensions": [],
-  "cppFileExtensions": [
-    "cpp"
-  ]
+	"buildFiles" : [ "D:/AndroidStudio/Cassette/app/CMakeLists.txt" ],
+	"cleanCommands" : 
+	[
+		"C:\\Users\\TanzenT\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\AndroidStudio\\Cassette\\app\\.externalNativeBuild\\cmake\\googleDebug\\x86 --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"blur-Debug-x86" : 
+		{
+			"abi" : "x86",
+			"artifactName" : "blur",
+			"buildCommand" : "C:\\Users\\TanzenT\\AppData\\Local\\Android\\Sdk\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\AndroidStudio\\Cassette\\app\\.externalNativeBuild\\cmake\\googleDebug\\x86 --target blur",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=i686-none-linux-android17 --gcc-toolchain=C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64 --sysroot=C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/sysroot  -Dblur_EXPORTS  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -mstackrealign -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security -stdlib=libc++  -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "D:/AndroidStudio/Cassette/app/src/main/cpp/blur.cpp",
+					"workingDirectory" : "D:/AndroidStudio/Cassette/app/.externalNativeBuild/cmake/googleDebug/x86"
+				}
+			],
+			"output" : "D:/AndroidStudio/Cassette/app/build/intermediates/cmake/google/debug/obj/x86/libblur.so",
+			"toolchain" : "2506101221"
+		}
+	},
+	"toolchains" : 
+	{
+		"2506101221" : 
+		{
+			"cCompilerExecutable" : "C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe",
+			"cppCompilerExecutable" : "C:/Users/TanzenT/AppData/Local/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe"
+		}
+	}
 }
