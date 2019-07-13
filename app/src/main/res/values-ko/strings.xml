@@ -1,5 +1,5 @@
 <resources>
-  <string name="version">v1.9.2</string>
+  <string name="version">v1.9.5</string>
   <string name="app_name">카세트</string>
 
   <string name="tab_song">노래</string>

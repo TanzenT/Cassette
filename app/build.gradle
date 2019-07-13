@@ -25,14 +25,14 @@ android {
         applicationId "tanzent.cassette"
         minSdkVersion 17
         targetSdkVersion 26
-        versionCode 108
-        versionName "1.9.2_HF"
+        versionCode 109
+        versionName "1.9.5_R"
 
         flavorDimensions "default"
         vectorDrawables.useSupportLibrary = true
         ndk {
 //            abiFilters 'armeabi-v7a'
-            abiFilters 'armeabi-v7a', 'x86'
+            abiFilters 'armeabi-v7a', 'x86', 'arm64-v8a', 'x86_64'
         }
         externalNativeBuild {
             cmake {

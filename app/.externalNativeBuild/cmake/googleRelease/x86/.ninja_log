@@ -1,3 +1,6 @@
 # ninja log v5
 9	19985	0	CMakeFiles/blur.dir/src/main/cpp/blur.cpp.o	943fb94697c24b4f
 19986	29127	0	../../../../build/intermediates/cmake/google/release/obj/x86/libblur.so	5417392fe71d9fd3
+1	503	0	build.ninja	2a0d018fa6b8fae1
+8	1185	0	CMakeFiles/blur.dir/src/main/cpp/blur.cpp.o	9203850ebc915e62
+1185	1675	0	../../../../build/intermediates/cmake/google/release/obj/x86/libblur.so	199fa1ef26e29240
